@@ -8,6 +8,20 @@
 }
 
 .texto {
+  font-size: 18px;
   color: white;
   line-height: 1.5;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgba(70, 70, 70, 0.285);
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: 400;
+}
+
+.link:hover {
+  background-color: rgba(70, 70, 70, 0.451);
 }
