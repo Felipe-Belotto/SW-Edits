@@ -6,7 +6,7 @@ export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch('https://6515e6ed09e3260018c94260.mockapi.io/filmes')
+    fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
       .then((resposta) => resposta.json())
       .then((dados) => {
         setVideos(dados);

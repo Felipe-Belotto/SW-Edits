@@ -7,7 +7,7 @@ export default function Player() {
   const parametros = useParams();
 
   useEffect(() => {
-    fetch(`https://6515e6ed09e3260018c94260.mockapi.io/filmes/${parametros.id}`) // Use o ID dos parâmetros para buscar um vídeo específico
+    fetch(`https://6516db6809e3260018ca679b.mockapi.io/Edits/${parametros.id}`) // Use o ID dos parâmetros para buscar um vídeo específico
       .then((resposta) => resposta.json())
       .then((dados) => {
         setVideo(dados);

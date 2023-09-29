@@ -31,6 +31,7 @@ export default function InputForm(props) {
       autoComplete="off"
       onChange={props.onChange}
       value={props.value}
+      required
     />
   );
 }
@@ -59,6 +60,7 @@ export function TextAreaForm(props) {
       multiline
       onChange={props.onChange}
       value={props.value}
+      required
     />
   );
 }
@@ -84,11 +86,12 @@ export function SelectForm(props) {
           style={SelectStyle}
           onChange={props.onChange}
           value={props.value}
+          required
         >
           <MenuItem value={''}></MenuItem>
-          <MenuItem value={'1'}>Exemplo 1</MenuItem>
-          <MenuItem value={'2'}>Exemplo 2</MenuItem>
-          <MenuItem value={'3'}>Exemplo 3</MenuItem>
+          <MenuItem value={'Jedi'}>Jedi</MenuItem>
+          <MenuItem value={'Sith'}>Sith</MenuItem>
+          <MenuItem value={'Mercenarios'}>Caçador de recompensa</MenuItem>
         </Select>
       </FormControl>
     </Box>

@@ -6,6 +6,7 @@ import InputForm, {
 import styles from './PaginaNovoVideo.module.css';
 import { useEffect, useState } from 'react';
 import Botao from '../../components/Botao/Botao';
+import EnviarNovoVideo from './EnviarNovoVideo';
 
 export default function PaginaNovoVideo() {
   const [titulo, setTitulo] = useState('');
@@ -26,6 +27,7 @@ export default function PaginaNovoVideo() {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(dados);
+    EnviarNovoVideo(titulo,video,imagem,categoria,descricao)
   };
 
   useEffect(() => {
