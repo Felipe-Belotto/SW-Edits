@@ -1,14 +1,31 @@
-.input{
+.input {
   border-radius: 4px;
-  background:  #53585D;
+  background: #53585D;
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
- }
+}
 
- .opcao{
+.opcao {
   color: white;
- }
+}
 
+.inputColorContainer {
+  border-radius: 4px;
+  background: #53585D;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.inputColor {
+  width: 100%;
+}
+
+.inputColorLabel {
+  color: '#D7D8D7';
+}

@@ -1,4 +1,3 @@
-import { Alert, Button } from '@mui/material';
 import InputForm, {
   SelectForm,
   TextAreaForm,
@@ -7,6 +6,7 @@ import styles from './PaginaNovoVideo.module.css';
 import { useEffect, useState } from 'react';
 import Botao from '../../components/Botao/Botao';
 import EnviarNovoVideo from './EnviarNovoVideo';
+import { Link } from 'react-router-dom';
 
 export default function PaginaNovoVideo() {
   const [titulo, setTitulo] = useState('');
@@ -101,7 +101,10 @@ export default function PaginaNovoVideo() {
             <Botao label="Salvar" type="submit" />
             <Botao label="Limpar" color="error" onClick={limparDados} />
           </div>
+          <Link to={"/novaCategoria"}>
           <Botao label="Nova categoria" />
+          </Link>
+          
         </div>
       </form>
     </section>

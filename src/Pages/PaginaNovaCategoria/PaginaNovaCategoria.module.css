@@ -1,0 +1,56 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.titulo {
+  color: var(----color-gray-light, #F5F5F5);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .formulario {
+    padding: 20px 10%;
+  }
+
+  .botoes__container {
+    justify-content: space-between;
+  }
+
+
+  .botoesEsquerda {
+    width: 60%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .formulario {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .titulo {
+    font-size: 48px;
+  }
+}
