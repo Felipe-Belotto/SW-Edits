@@ -16,16 +16,25 @@
   border-radius: 4px;
   background: #53585D;
   font-family: Roboto;
-  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
-.inputColor {
-  width: 100%;
+.inputColorLabel {
+  color: #D7D8D7;
 }
 
-.inputColorLabel {
-  color: '#D7D8D7';
+input[type="color"] {
+  width: 100%;
+  height: 30px;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 12px;
 }

@@ -7,6 +7,7 @@ export default function PaginaNovaCategoria () {
 
     const [nome, setNome] = useState("")
     const [descricao, setDescricao] = useState("")
+    const [cor, setCor] = useState()
 
   return (
     <section className={styles.formulario}>
@@ -30,7 +31,15 @@ export default function PaginaNovaCategoria () {
           }}
           value={descricao}/>
 
-          <InputColor />
+          <InputColor id="cor" 
+          value={cor} 
+          onChange={(event) => {
+            setCor(event.target.value);
+          }}/>
+
+            <h1 style={{fontSize:"32px", color:"white"}}>{nome}</h1>
+            <h1 style={{fontSize:"32px", color:"white"}}>{descricao}</h1>
+            <h1 style={{fontSize:"32px", color:"white"}}>{cor}</h1>
 
 
       </form>

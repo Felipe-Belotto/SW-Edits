@@ -99,18 +99,20 @@ export function SelectForm(props) {
   );
 }
 
-  export function InputColor () {
+  export function InputColor (props) {
     const MenuLabel = {
       color: '#D7D8D7',
     };
     return (
-      <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth  className={styles.inputColorContainer}>
+      <Box sx={{ minWidth: 500 }}>
+      <FormControl fullWidth  variant="filled" className={styles.inputColorContainer} >
       <InputLabel id="demo-simple-select-label" className={styles.inputColorLabel} style={MenuLabel}>
-          Escolha uma cor
+        Escolha uma cor
         </InputLabel>
-       <Input type='color' className={styles.inputColor}></Input>
+        <Input type='color' value={props.value} defaultValue={"#ffffff"} onChange={props.onChange} id={props.id} />
+        
       </FormControl>
+    
     </Box>
   
   )}
