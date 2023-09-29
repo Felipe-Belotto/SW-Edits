@@ -1,7 +1,7 @@
 .formulario {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 0 20%;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
@@ -27,30 +27,41 @@
 }
 
 .botoes__container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 32px;
 }
 
 .botoesEsquerda {
+  width: 50%;
   display: flex;
   gap: 40px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1000px) {
   .formulario {
-    padding: 50px 30%;
+    padding: 20px 10%;
   }
-}
 
-@media screen and (min-width: 1000px) {
-  .formulario {
-    padding: 50px 10%;
+  .botoes__container {
+    justify-content: space-between;
+  }
+
+
+  .botoesEsquerda {
+    width: 60%;
+    justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 768px) {
+
+  .botoes__container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .botoesEsquerda {
     width: 100%;
     justify-content: space-between;
