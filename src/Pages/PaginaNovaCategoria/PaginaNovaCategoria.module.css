@@ -33,7 +33,7 @@
   height: auto;
   min-height: 100px;
   border-radius: 4px;
-  background-color: #4c5055;
+  background-color: #cdcdcd3b;
 }
 
 .preview__nome {
@@ -48,16 +48,17 @@
 
 .preview__descricao {
   width: 98%;
+  height: 100%;
   font-size: 24px;
-  color: white;
-  padding: 10px;
+  color: #f5f5f5;
+  padding: 8px 12px;
   overflow-wrap: break-word;
 }
 
 .preview__legenda {
   align-self: center;
   font-size: 12px;
-  color: white;
+  color: #f5f5f5;
   padding: 8px;
 }
 
