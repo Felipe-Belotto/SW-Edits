@@ -1,5 +1,5 @@
 import styles from './BotaoNovoVideo.module.css';
 
 export default function BotaoNovoVideo() {
-  return <button>Novo vídeo</button>;
+  return <button className={styles.botaoCabecalho}>Novo vídeo</button>;
 }
