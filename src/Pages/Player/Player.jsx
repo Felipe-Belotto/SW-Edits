@@ -18,9 +18,13 @@ export default function Player() {
     return <div>Carregando...</div>;
   }
 
+  const categoriaEstilo = {
+    backgroundColor: 's#0e0e0e ',
+  };
+
   console.log(video);
   return (
-    <section className={styles.container}>
+    <section className={styles.playerContainer}>
       <iframe
         width="100%"
         height="100%"
@@ -32,9 +36,19 @@ export default function Player() {
         className={styles.iframe}
       ></iframe>
 
-      <h1 className={styles.titulo}>{video.titulo}</h1>
-      <p className={styles.categoria}>{video.categoria}</p>
-      <p className={styles.descricao}>{video.descricao}</p>
+      <div className={styles.dadosContainer}>
+        <h1 className={styles.titulo} style={categoriaEstilo}>
+          <span className={styles.tituloContainer}>
+            {' '}
+            <span className={styles.spanTitulo}>Personagem:</span>
+            {video.titulo}
+          </span>
+        </h1>
+        <p className={styles.descricao}>
+          <span className={styles.spanDescricao}>Descrição: </span>
+          {video.descricao}
+        </p>
+      </div>
     </section>
   );
 }
