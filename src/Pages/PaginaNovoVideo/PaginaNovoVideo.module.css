@@ -38,6 +38,18 @@
   gap: 40px;
 }
 
+.botaoCategoria {
+  width: 100%;
+}
+
+
+.botoesDireita {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  flex: 1;
+}
+
 @media screen and (max-width: 1000px) {
   .formulario {
     padding: 20px 10%;
@@ -49,7 +61,7 @@
 
 
   .botoesEsquerda {
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
   }
 }
@@ -77,4 +89,12 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  .botoesDireita {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
 }

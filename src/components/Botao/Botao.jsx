@@ -9,6 +9,7 @@ export default function Botao(props) {
       onClick={props.onClick}
       type={props.type}
       className={styles.botao}
+      style={{backgroundColor: props.corFundo}}
     >
       {props.label}
     </Button>

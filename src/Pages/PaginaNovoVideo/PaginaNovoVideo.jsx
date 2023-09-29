@@ -101,9 +101,12 @@ export default function PaginaNovoVideo() {
             <Botao label="Salvar" type="submit" />
             <Botao label="Limpar" color="error" onClick={limparDados} />
           </div>
+
+          <div className={styles.botoesDireita}>
           <Link to={"/novaCategoria"}>
           <Botao label="Nova categoria" />
           </Link>
+          </div>
           
         </div>
       </form>
