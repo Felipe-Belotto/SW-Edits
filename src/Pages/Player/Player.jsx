@@ -24,6 +24,7 @@ export default function Player() {
 
   return (
     <section className={styles.playerContainer}>
+      <div className={styles.iframeContainer}>
       <iframe
         width="100%"
         height="100%"
@@ -32,8 +33,8 @@ export default function Player() {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-        className={styles.iframe}
       ></iframe>
+      </div>
 
       <div className={styles.dadosContainer}>
         <h1 className={styles.titulo} style={categoriaEstilo}>
