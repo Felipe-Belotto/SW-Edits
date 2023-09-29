@@ -13,6 +13,7 @@
 }
 
 .inputColorContainer {
+  width: 100%;
   border-radius: 4px;
   background: #53585D;
   font-family: Roboto;

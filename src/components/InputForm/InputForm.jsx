@@ -104,7 +104,7 @@ export function SelectForm(props) {
       color: '#D7D8D7',
     };
     return (
-      <Box sx={{ minWidth: 500 }}>
+      <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth  variant="filled" className={styles.inputColorContainer} >
       <InputLabel id="demo-simple-select-label" className={styles.inputColorLabel} style={MenuLabel}>
         Escolha uma cor
