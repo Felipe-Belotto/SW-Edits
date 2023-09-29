@@ -4,16 +4,20 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
-  background-color: #000000;
+  background-color: #000000dc;
 }
 
 .logo {
   height: 40px;
 }
 
+.logo:hover {
+  filter: opacity(90%);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     gap: 16px;
     padding: 4px;
-  } 
+  }
 }
