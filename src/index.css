@@ -13,4 +13,5 @@
 html {
   min-height: 100vh;
   background-image: url(/public/Fundo.jpg);
+  -webkit-tap-highlight-color: none;
 }
