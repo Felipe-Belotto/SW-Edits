@@ -7,9 +7,9 @@ export default function PaginaBase() {
   return (
     <>
       <Cabecalho />
-      <section className={styles.main}>
+      <main className={styles.main}>
         <Outlet />
-      </section>
+      </main>
 
       <Rodape />
     </>
