@@ -8,6 +8,7 @@ export default function Botao(props) {
       color={props.color}
       onClick={props.onClick}
       type={props.type}
+      className={styles.botao}
     >
       {props.label}
     </Button>

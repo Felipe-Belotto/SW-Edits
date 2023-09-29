@@ -1,21 +1,21 @@
 .formulario {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 50px 0;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-.titulo{
+.titulo {
 
   color: var(----color-gray-light, #F5F5F5);
   text-align: center;
-  
+
   font-family: Roboto;
   font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  }
+}
 
 .container {
   height: 100%;
@@ -26,7 +26,7 @@
   gap: 40px;
 }
 
-.botoes__container{
+.botoes__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -41,5 +41,18 @@
 @media screen and (min-width: 1920px) {
   .formulario {
     padding: 50px 30%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .formulario {
+    padding: 50px 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .botoesEsquerda {
+    width: 100%;
+    justify-content: space-between;
   }
 }
