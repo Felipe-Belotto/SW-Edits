@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import InputForm, { InputColor, TextAreaForm } from '../../components/InputForm/InputForm'
 import styles from './PaginaNovaCategoria.module.css'
 import { FormControl } from '@mui/base'
@@ -8,6 +8,11 @@ export default function PaginaNovaCategoria () {
     const [nome, setNome] = useState("")
     const [descricao, setDescricao] = useState("")
     const [cor, setCor] = useState()
+    const [dados, setDados] = useState([nome,descricao,cor])
+
+    useEffect(() => {
+      setDados([nome,descricao,cor])
+    })
 
   return (
     <section className={styles.formulario}>
@@ -36,15 +41,21 @@ export default function PaginaNovaCategoria () {
           onChange={(event) => {
             setCor(event.target.value);
           }}/>
-
-            <h1 style={{fontSize:"32px", color:"white"}}>{nome}</h1>
-            <h1 style={{fontSize:"32px", color:"white"}}>{descricao}</h1>
-            <h1 style={{fontSize:"32px", color:"white"}}>{cor}</h1>
-
-
       </form>
 
-      
+
+        <section className={styles.preview__container} style={{ backgroundColor: cor}}>
+
+          <h1 className={styles.preview__nome}>
+            {nome}
+          </h1>
+          <p className={styles.preview__descricao}>
+            {descricao}
+            </p>
+        </section>
+        <p className={styles.preview__legenda}>Visualização em tempo real</p>
+
+
     </section>
   )
 }
