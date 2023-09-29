@@ -25,3 +25,10 @@
 .titulo{
   font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+  .card{
+    width: 80%;
+    height: 100%;
+  }
+}

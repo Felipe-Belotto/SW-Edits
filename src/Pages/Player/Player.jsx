@@ -22,7 +22,6 @@ export default function Player() {
     backgroundColor: 's#0e0e0e ',
   };
 
-  console.log(video);
   return (
     <section className={styles.playerContainer}>
       <iframe
@@ -30,9 +29,9 @@ export default function Player() {
         height="100%"
         src={video.video}
         title={video.titulo}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
         className={styles.iframe}
       ></iframe>
 

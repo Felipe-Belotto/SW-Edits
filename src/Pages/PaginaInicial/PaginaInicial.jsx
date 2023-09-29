@@ -13,8 +13,10 @@ export default function PaginaInicial() {
       });
   }, []);
   return (
-    <section className={styles.secao}>
-      <Card id="1" />
+    <section className={styles.container}>
+      {videos.map((video) => {
+        return <Card imagem={video.imagem} id={video.id} key={video.id} />;
+      })}
     </section>
   );
 }

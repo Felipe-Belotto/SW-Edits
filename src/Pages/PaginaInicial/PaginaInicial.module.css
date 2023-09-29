@@ -1,4 +1,8 @@
-.secao {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
   min-height: 80vh;
   padding: 50px;
+  background-color: rgba(62, 62, 62, 0.357);
 }

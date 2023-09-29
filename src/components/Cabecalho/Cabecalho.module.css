@@ -11,3 +11,9 @@
   height: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 16px;
+    padding: 4px;
+  } 
+}
