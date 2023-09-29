@@ -57,6 +57,10 @@
 
 @media screen and (max-width: 768px) {
 
+  .formulario {
+    padding: 10px;
+  }
+
   .botoes__container {
     justify-content: space-between;
     flex-wrap: wrap;
