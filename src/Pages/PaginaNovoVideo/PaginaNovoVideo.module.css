@@ -1,0 +1,42 @@
+.formulario {
+  display: flex;
+  flex-direction: column; 
+  padding: 50px 0;
+}
+
+.titulo{
+
+  color: var(----color-gray-light, #F5F5F5);
+  text-align: center;
+  
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px;
+  gap: 40px;
+}
+
+.botoes__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoesEsquerda {
+  display: flex;
+  gap: 40px;
+}
+
+@media screen and (min-width: 1920px) {
+  .formulario {
+    padding: 50px 30%;
+  }
+}

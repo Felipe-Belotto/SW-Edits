@@ -1,0 +1,22 @@
+button {
+display: flex;
+width: 180px;
+height: 54px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+background-color: transparent;
+color: #FFF;
+text-align: center;
+
+border: 1px solid white;
+border-radius: 4px;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+cursor: pointer;
+}
+
+button:hover {
+  background-color: #051e3e96;
+}

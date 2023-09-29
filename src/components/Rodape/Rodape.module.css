@@ -1,0 +1,11 @@
+.container {
+  height: 120px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50%;
+}

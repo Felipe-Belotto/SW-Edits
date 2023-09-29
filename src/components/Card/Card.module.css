@@ -1,0 +1,27 @@
+.card {
+  width: 280px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.card:hover{
+  background-color:transparent;
+  border: 2px solid white;
+  border-radius: 16px;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.titulo{
+  font-size: 18px;
+}
