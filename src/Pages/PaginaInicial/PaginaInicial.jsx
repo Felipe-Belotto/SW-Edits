@@ -55,15 +55,16 @@ export default function PaginaInicial() {
           </div>
 
           <motion.div
-            onDrag={handleDrag}
-            style={{
-              width: "100%",
-              display: 'flex',
-              overflowX: 'auto',
-              scrollSnapType: 'x mandatory',
-              x: scrollX, // Use o valor de scrollX para posicionar os vídeos
-            }}
-          >
+          onDrag={handleDrag}
+          style={{
+            width: "100%",
+            display: 'flex',
+            overflowX: 'auto',
+            scrollSnapType: 'x mandatory',
+            x: scrollX,
+              background: "rgba(0, 0, 0, 0.293)"      
+          }}
+        >
             {videos
               .filter((video) => video.categoria === categoria.nome)
               .map((video) => (

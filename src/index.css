@@ -18,3 +18,27 @@ body {
   min-height: 100vh;
   background-image: url(/public/Fundo.jpg);
 }
+
+/* Estilo para o scroll horizontal */
+body {
+  overflow-x: hidden;
+  /* Oculta o scroll horizontal padrão */
+}
+
+/* Adiciona um estilo personalizado ao scroll horizontal */
+body::-webkit-scrollbar {
+  height: 6px;
+  width: 10px;
+  /* Altura do scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  /* Cor da "thumb" (a parte arrastável do scroll) */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #4f4f4f;
+  /* Cor da "track" (a área onde a thumb se move) */
+}
