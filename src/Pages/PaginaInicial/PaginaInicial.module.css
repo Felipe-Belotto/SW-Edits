@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   flex: 1;
   gap: 32px;
   padding: 50px;
@@ -20,6 +20,7 @@
 .categoria__nome {
   color: #f8f8f8;
   font-size: 28px;
+  padding: 30px 0 0 0;
 }
 
 .categoria__descricao {
@@ -29,8 +30,8 @@
 }
 
 .categoria__videos {
-  width: 50%;
   display: flex;
+  flex: 1;
   justify-content: center;
   gap: 16px;
 }
@@ -53,7 +54,7 @@
     justify-content: center;
     gap: 16px;
     padding: 0 0;
-    width: 90%;
+    width: 85%;
     background-color: rgba(0, 0, 0, 0.471);
   }
 

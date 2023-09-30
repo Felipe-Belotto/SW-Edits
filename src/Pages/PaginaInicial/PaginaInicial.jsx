@@ -37,8 +37,9 @@ export default function PaginaInicial() {
   const controls = useAnimation();
   const scrollX = useMotionValue(0);
 
-  const handleDrag = (e, info) => {
-    controls.start({ x: info.offset.x });
+  const handleDrag = (_, info) => {
+    // Atualize o valor de scrollX manualmente durante o arraste
+    scrollX.set(info.offset.x);
   };
 
   return (
@@ -55,24 +56,21 @@ export default function PaginaInicial() {
           </div>
 
           <motion.div
-            className={styles.categoria__videos}
-            drag="x"
-            dragConstraints={{ left: 0, right: 0 }}
             onDrag={handleDrag}
-            animate={controls}
             style={{
+              width: "100%",
               display: 'flex',
-              overflowX: 'scroll',
+              gap: "16px",
+              overflowX: 'auto',
               scrollSnapType: 'x mandatory',
+              x: scrollX, // Use o valor de scrollX para posicionar os vídeos
             }}
           >
-            {videos.map((video) => {
-              if (video.categoria === categoria.nome) {
-                return <Card key={video.id} imagem={video.imagem} id={video.id} />;
-              } else {
-                return null;
-              }
-            })}
+            {videos
+              .filter((video) => video.categoria === categoria.nome)
+              .map((video) => (
+                <Card key={video.id} imagem={video.imagem} id={video.id} />
+              ))}
           </motion.div>
         </motion.section>
       ))}
