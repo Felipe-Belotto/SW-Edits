@@ -51,7 +51,7 @@ export default function PaginaInicial() {
         >
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
-            <article className={styles.categoria__descricao}>{categoria.descricao}</article>
+            {/* <article className={styles.categoria__descricao}>{categoria.descricao}</article> */}
           </div>
 
           <motion.div
@@ -59,7 +59,6 @@ export default function PaginaInicial() {
             style={{
               width: "100%",
               display: 'flex',
-              gap: "16px",
               overflowX: 'auto',
               scrollSnapType: 'x mandatory',
               x: scrollX, // Use o valor de scrollX para posicionar os vídeos

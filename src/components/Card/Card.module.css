@@ -9,6 +9,7 @@
   margin: 0;
   border: none;
   flex-shrink: 0;
+  margin: 4px;
 }
 
 .card:hover {
