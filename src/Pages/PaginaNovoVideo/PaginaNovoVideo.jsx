@@ -31,6 +31,7 @@ export default function PaginaNovoVideo() {
   };
 
   useEffect(() => {
+    setImagem(imagem)
     setDados([titulo, video, imagem, categoria, descricao, codigo]);
   });
 
@@ -72,6 +73,11 @@ export default function PaginaNovoVideo() {
           }}
           value={imagem}
         />
+        
+        <aside className={styles.preview__imagem__container}>
+        <img src={imagem} alt="Preencha o URL da imagem e ela aparecerá aqui" className={styles.preview__imagem}/>
+        </aside>
+        
         <SelectForm
           id="categoria"
           label="Escolha uma categoria"

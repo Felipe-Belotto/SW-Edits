@@ -50,6 +50,33 @@
   flex: 1;
 }
 
+.preview__imagem__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(71, 71, 71, 0.345);
+}
+
+.preview__imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 250px;
+  max-width: 350px;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+@media screen and (max-width: 1444px) {
+  .preview__imagem {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+
 @media screen and (max-width: 1000px) {
   .formulario {
     padding: 20px 10%;
@@ -95,6 +122,11 @@
     display: flex;
     justify-content: center;
     flex: 1;
+  }
+
+  .preview__imagem {
+    height: 50%;
+    width: 60%;
   }
 
 }
