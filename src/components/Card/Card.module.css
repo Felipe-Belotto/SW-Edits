@@ -9,7 +9,7 @@
   margin: 0;
   border: none;
   flex-shrink: 0;
-  margin: 4px;
+  margin: 16px;
 }
 
 .card:hover {
@@ -30,5 +30,6 @@
   .card {
     width: 300px;
     height: 250px;
+    margin: 8px;
   }
 }

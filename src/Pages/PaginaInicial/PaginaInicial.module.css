@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: start;
   flex: 1;
   gap: 16px;
-  padding: 50px;
+  padding: 16px 0 48px 0;
   background-color: rgba(0, 0, 0, 0.718);
 }
 
@@ -13,9 +14,9 @@
   justify-content: center;
   gap: 16px;
   padding: 30px;
-  width: 40%;
-  background-color: rgba(0, 0, 0, 0.471);
-  border-radius: 50px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.781);
+  border-radius: 8px;
 }
 
 
@@ -58,7 +59,6 @@
     margin: 16px;
     padding: 16px;
     width: 90%;
-    border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.471);
   }
 
