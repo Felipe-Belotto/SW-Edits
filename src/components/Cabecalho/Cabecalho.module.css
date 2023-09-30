@@ -8,7 +8,10 @@
 }
 
 .logo {
-  height: 40px;
+  display: flex;
+  height: auto;
+  width: 200px;
+  flex-shrink: 0;
 }
 
 .logo:hover {

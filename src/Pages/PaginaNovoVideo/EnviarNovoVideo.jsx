@@ -5,7 +5,7 @@ export default async function EnviarNovoVideo(titulo, video, imagem,categoria,de
     body: JSON.stringify({
       titulo: titulo,
       video: video,
-      imagem: imagem,
+      imagem: imagem ,
       categoria: categoria,
       descricao: descricao,
     }),

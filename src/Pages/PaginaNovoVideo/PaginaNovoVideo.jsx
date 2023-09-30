@@ -1,5 +1,5 @@
 import InputForm, {
-  SelectForm,
+  SelectFormCategorias,
   TextAreaForm,
 } from '../../components/InputForm/InputForm';
 import styles from './PaginaNovoVideo.module.css';
@@ -15,6 +15,7 @@ export default function PaginaNovoVideo() {
   const [categoria, setCategoria] = useState('');
   const [descricao, setDescricao] = useState('');
   const [codigo, setCodigo] = useState('');
+  const [codigoVideo, setCodigoVideo] = useState('');
   const [dados, setDados] = useState([
     titulo,
     video,
@@ -31,7 +32,8 @@ export default function PaginaNovoVideo() {
   };
 
   useEffect(() => {
-    setImagem(imagem)
+    setImagem(`https://img.youtube.com/vi/${codigoVideo}/hqdefault.jpg`)
+    setVideo(`https://www.youtube.com/embed/${codigoVideo}?si=m9cQpJWmBkCxIj8D`)
     setDados([titulo, video, imagem, categoria, descricao, codigo]);
   });
 
@@ -44,6 +46,8 @@ export default function PaginaNovoVideo() {
     setCodigo('');
   }
 
+  console.log(dados)
+
   return (
     <section className={styles.formulario}>
       <h1 className={styles.titulo}>Novo vídeo</h1>
@@ -51,41 +55,34 @@ export default function PaginaNovoVideo() {
       <form className={styles.container} onSubmit={handleSubmit}>
         <InputForm
           id="titulo"
-          label="Título"
+          label="Personagem"
           onChange={(event) => {
             setTitulo(event.target.value);
           }}
           value={titulo}
         />
         <InputForm
-          id="linkVideo"
-          label="Link do vídeo"
+          id="codigoVideo"
+          label="Código do video (Youtube)"
           onChange={(event) => {
-            setVideo(event.target.value);
+          setCodigoVideo(event.target.value);
           }}
-          value={video}
-        />
-        <InputForm
-          id="linkImagem"
-          label="Link da imagem"
-          onChange={(event) => {
-            setImagem(event.target.value);
-          }}
-          value={imagem}
+          value={codigoVideo}
         />
         
         <aside className={styles.preview__imagem__container}>
-        <img src={imagem} alt="Preencha o URL da imagem e ela aparecerá aqui" className={styles.preview__imagem}/>
+        <img src={imagem} className={styles.preview__imagem}/>
         </aside>
         
-        <SelectForm
+        <SelectFormCategorias
           id="categoria"
           label="Escolha uma categoria"
           onChange={(event) => {
             setCategoria(event.target.value);
           }}
           value={categoria}
-        />
+        /> 
+
         <TextAreaForm
           id="descricao"
           label="Descrição"

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import InputForm, { InputColor, TextAreaForm } from '../../components/InputForm/InputForm'
 import styles from './PaginaNovaCategoria.module.css'
 import { FormControl } from '@mui/base'
+import Botao from '../../components/Botao/Botao'
+import EnviarNovaCategoria from './EnviarNovaCategoria'
 
 export default function PaginaNovaCategoria () {
 
@@ -14,11 +16,23 @@ export default function PaginaNovaCategoria () {
       setDados([nome,descricao,cor])
     })
 
+    const limparDados = () => {
+      setNome("")
+      setDescricao("")
+      setCor("")
+    }
+
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      EnviarNovaCategoria(nome,descricao,cor)
+      alert(`Categoria ${nome} cadastrada com sucesso !`)
+    };
+
   return (
     <section className={styles.formulario}>
       <h1 className={styles.titulo}>Nova Categoria</h1>
 
-      <form className={styles.container}>
+      <form className={styles.container} onSubmit={handleSubmit}>
 
         <InputForm
          id="nome"
@@ -41,6 +55,11 @@ export default function PaginaNovaCategoria () {
           onChange={(event) => {
             setCor(event.target.value);
           }}/>
+
+          <div className={styles.botoesContainer}>
+            <Botao label="Salvar" type="submit" />
+            <Botao label="Limpar" color="error" onClick={limparDados} />
+          </div>
       </form>
 
 

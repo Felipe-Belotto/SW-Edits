@@ -8,6 +8,7 @@ import {
   TextField,
 } from '@mui/material';
 import styles from './InputForm.module.css';
+import { Children, useEffect, useState } from 'react';
 
 export default function InputForm(props) {
   const labelStyles = {
@@ -66,7 +67,7 @@ export function TextAreaForm(props) {
   );
 }
 
-export function SelectForm(props) {
+export function SelectFormCategorias(props) {
   const MenuLabel = {
     color: '#D7D8D7',
   };
@@ -74,6 +75,16 @@ export function SelectForm(props) {
   const SelectStyle = {
     color: 'white',
   };
+
+  const [categorias, setCategorias] = useState([]);
+
+  useEffect(() => {
+    fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias')
+      .then((resposta) => resposta.json())
+      .then((dados) => {
+        setCategorias(dados);
+      });
+  }, []);
 
   return (
     <Box sx={{ minWidth: 120 }}>
@@ -89,10 +100,11 @@ export function SelectForm(props) {
           value={props.value}
           required
         >
-          <MenuItem value={''}></MenuItem>
-          <MenuItem value={'Jedi'}>Jedi</MenuItem>
-          <MenuItem value={'Sith'}>Sith</MenuItem>
-          <MenuItem value={'Mercenarios'}>Caçador de recompensa</MenuItem>
+          {categorias.map((categoria) => {
+            return (
+            <MenuItem value={categoria.nome}>{categoria.nome}</MenuItem>
+            )
+          })}
         </Select>
       </FormControl>
     </Box>

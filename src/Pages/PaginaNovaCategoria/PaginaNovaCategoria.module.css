@@ -25,6 +25,11 @@
   gap: 40px;
 }
 
+.botoesContainer {
+  display: flex;
+  gap: 32px;
+}
+
 .preview__container {
   display: flex;
   flex-direction: column;
