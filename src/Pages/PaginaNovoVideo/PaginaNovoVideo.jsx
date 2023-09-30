@@ -66,8 +66,8 @@ export default function PaginaNovoVideo() {
           value={video}
         />
         <InputForm
-          id="imagemVideo"
-          label="Imagem do vídeo"
+          id="linkImagem"
+          label="Link da imagem"
           onChange={(event) => {
             setImagem(event.target.value);
           }}
