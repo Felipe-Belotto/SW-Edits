@@ -1,6 +1,6 @@
 .card {
-  min-width: 280px;
-  min-height: 200px;
+  width: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0;
   border: none;
+  flex-shrink: 0;
 }
 
 .card:hover {
@@ -26,7 +27,7 @@
 
 @media screen and (max-width: 768px) {
   .card {
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 250px;
   }
 }
