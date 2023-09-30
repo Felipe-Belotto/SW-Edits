@@ -28,7 +28,7 @@ export default function PaginaInicial() {
         setCategorias(
           dados.map((categoria) => ({
             ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.08),
+            corDeFundo: ajustarOpacidade(categoria.cor, 0.1),
           }))
         );
       });
@@ -38,7 +38,6 @@ export default function PaginaInicial() {
   const scrollX = useMotionValue(0);
 
   const handleDrag = (_, info) => {
-    // Atualize o valor de scrollX manualmente durante o arraste
     scrollX.set(info.offset.x);
   };
 
