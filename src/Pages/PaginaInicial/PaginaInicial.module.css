@@ -30,6 +30,7 @@
 }
 
 .categoria__nome {
+  padding: 0 0 0 16px;
   color: #f8f8f8;
   font-size: 32px;
 }
@@ -59,6 +60,7 @@
 
   .categoria__nome {
     color: #f8f8f8;
+    font-size: 24px;
   }
 
   .categoria__descricao {

@@ -23,7 +23,7 @@ export default function Card(props) {
         <img src={props.imagem} className={styles.imagem} />
         {hoverAtivo && (
           <div className={styles.hover__ativo}>
-            <h1 className={styles.nome}>{props.titulo}</h1>
+            <h1 className={styles.card__nome}>{props.titulo}</h1>
           </div>
         )}
       </div>
