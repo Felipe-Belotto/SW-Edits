@@ -13,6 +13,8 @@ export default function Player() {
   const [loading, setLoading] = useState(true);
   const parametros = useParams();
 
+  window.scrollTo(0, 0);
+
   const ajustarOpacidade = (corHex, opacidade) => {
     const cleanedHex = corHex.replace('#', '');
     const [r, g, b] = cleanedHex.match(/.{1,2}/g).map((value) => parseInt(value, 16));
@@ -90,7 +92,7 @@ export default function Player() {
           {video.descricao}
         </p>
       </div>
-      
+
       {videosRelacionados.length > 0 && (
           <section className={styles.relacionados__container}>
           <h1 className={styles.relacionados__titulo}>Relacionados a {video.titulo}</h1>
