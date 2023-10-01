@@ -19,11 +19,6 @@ body {
   background-image: url(/public/Fundo.jpg);
 }
 
-/* Estilo para o scroll horizontal */
-body {
-  overflow-x: hidden;
-}
-
 body::-webkit-scrollbar-track {
   background-color: #000000;
 
@@ -44,10 +39,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #323232;
   border: 1px solid #1d1d1d;
+  border-radius: 16px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+  background-color: #444444;
 }

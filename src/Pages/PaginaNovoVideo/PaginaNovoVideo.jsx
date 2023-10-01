@@ -25,10 +25,11 @@ export default function PaginaNovoVideo() {
     codigo,
   ]);
 
-  const handleSubmit = (event) => {
+  const submitEnviarNovoVideo = (event) => {
     event.preventDefault();
-    alert(dados);
+    alert(`Video adicionado com sucesso !`);
     EnviarNovoVideo(titulo,video,imagem,categoria,descricao)
+    limparDados()
   };
 
   useEffect(() => {
@@ -39,6 +40,7 @@ export default function PaginaNovoVideo() {
 
   function limparDados() {
     setTitulo('');
+    setCodigoVideo('')
     setVideo('');
     setImagem('');
     setCategoria('');
@@ -52,7 +54,7 @@ export default function PaginaNovoVideo() {
     <section className={styles.formulario}>
       <h1 className={styles.titulo}>Novo vídeo</h1>
 
-      <form className={styles.container} onSubmit={handleSubmit}>
+      <form className={styles.container} onSubmit={submitEnviarNovoVideo}>
         <InputForm
           id="titulo"
           label="Personagem"
