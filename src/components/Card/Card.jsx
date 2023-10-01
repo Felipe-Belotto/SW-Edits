@@ -1,10 +1,32 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import styles from './Card.module.css';
 
 export default function Card(props) {
+  const [hoverAtivo, setHoverAtivo] = useState(false);
+
+  const aoPassarOMouse = () => {
+    setHoverAtivo(true);
+  };
+
+  const aoSairMouse = () => {
+    setHoverAtivo(false);
+  };
+
   return (
     <Link to={`/${props.id}`} className={styles.card}>
-      <img src={props.imagem} /* imagem- */ className={styles.imagem} />
+      <div
+        className={styles.container}
+        onMouseOver={aoPassarOMouse}
+        onMouseLeave={aoSairMouse}
+      >
+        <img src={props.imagem} className={styles.imagem} />
+        {hoverAtivo && (
+          <div className={styles.hover__ativo}>
+            <h1 className={styles.nome}>{props.titulo}</h1>
+          </div>
+        )}
+      </div>
     </Link>
   );
 }
