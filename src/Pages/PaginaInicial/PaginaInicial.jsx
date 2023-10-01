@@ -27,7 +27,7 @@ export default function PaginaInicial() {
         setCategorias(
           dados.map((categoria) => ({
             ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.2),
+            corDeFundo: ajustarOpacidade(categoria.cor, 0.1),
           }))
         );
       });
@@ -37,12 +37,20 @@ export default function PaginaInicial() {
     scrollX.set(info.offset.x);
   };
 
+  const imagemCapa = "https://i.gifer.com/EwaQ.gif"
+
   return (
-    <>
+    <section className={styles.sectionVideos}>
+      <div  className={styles.banner}> 
+      <img src={imagemCapa}
+      className={styles.capa}/>
+
+</div>
+
       {categorias.map((categoria) => (
         <motion.section
           key={categoria.id}
-          className={styles.container}
+          className={styles.categoriaContainer}
           style={{ backgroundColor: categoria.corDeFundo }}
         >
           <div className={styles.categoria__info}>
@@ -68,6 +76,6 @@ export default function PaginaInicial() {
           </motion.div>
         </motion.section>
       ))}
-    </>
+    </section>
   );
 }

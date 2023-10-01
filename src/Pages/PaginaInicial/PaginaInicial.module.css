@@ -1,22 +1,32 @@
-.container {
+.sectionVideos {
+  display: flex;
+  flex-direction: column
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.693);
+}
+
+.capa {
+  height: 100%;
+  width: 50vw;
+}
+
+.categoriaContainer {
   display: flex;
   flex-direction: column;
   justify-content: start;
   flex: 1;
-  gap: 16px;
-  padding: 16px 0 48px 0;
-  background-color: rgba(0, 0, 0, 0.718);
 }
 
 .categoria__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
-  padding: 30px;
   width: auto;
-  background-color: rgba(0, 0, 0, 0.781);
-  border-radius: 8px;
+  padding: 8px;
 }
 
 .categoria__nome {
@@ -39,6 +49,12 @@
 }
 
 @media screen and (max-width: 1444px) {
+
+  .capa {
+    height: 100%;
+    width: 100%;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -47,7 +63,6 @@
     flex: 1;
     gap: 0px;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.718);
   }
 
   .categoria__info {
@@ -58,7 +73,6 @@
     margin: 16px;
     padding: 16px;
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.471);
   }
 
 
