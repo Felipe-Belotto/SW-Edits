@@ -1,18 +1,17 @@
 import styles from './PaginaInicial.module.css';
 import { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
-import { motion, useAnimation, useMotionValue } from 'framer-motion';
+import { motion, useMotionValue } from 'framer-motion';
 
 export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
+  const scrollX = useMotionValue(0);
 
   useEffect(() => {
     fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
       .then((resposta) => resposta.json())
-      .then((dados) => {
-        setVideos(dados);
-      });
+      .then((dados) => setVideos(dados));
   }, []);
 
   const ajustarOpacidade = (corHex, opacidade) => {
@@ -34,9 +33,6 @@ export default function PaginaInicial() {
       });
   }, []);
 
-  const controls = useAnimation();
-  const scrollX = useMotionValue(0);
-
   const handleDrag = (_, info) => {
     scrollX.set(info.offset.x);
   };
@@ -51,24 +47,23 @@ export default function PaginaInicial() {
         >
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
-            {/* <article className={styles.categoria__descricao}>{categoria.descricao}</article> */}
           </div>
 
           <motion.div
-          onDrag={handleDrag}
-          style={{
-            width: "100%",
-            display: 'flex',
-            overflowX: 'auto',
-            scrollSnapType: 'x mandatory',
-            x: scrollX,
-              background: "rgba(0, 0, 0, 0.293)"      
-          }}
-        >
+            onDrag={handleDrag}
+            style={{
+              width: '100%',
+              display: 'flex',
+              overflowX: 'auto',
+              scrollSnapType: 'x mandatory',
+              x: scrollX,
+              background: 'rgba(0, 0, 0, 0.293)',
+            }}
+          >
             {videos
               .filter((video) => video.categoria === categoria.nome)
               .map((video) => (
-                <Card key={video.id} imagem={video.imagem} id={video.id} />
+                <Card key={video.id} {...video} />
               ))}
           </motion.div>
         </motion.section>

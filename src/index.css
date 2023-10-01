@@ -22,23 +22,30 @@ body {
 /* Estilo para o scroll horizontal */
 body {
   overflow-x: hidden;
-  /* Oculta o scroll horizontal padrão */
-}
-
-/* Adiciona um estilo personalizado ao scroll horizontal */
-body::-webkit-scrollbar {
-  height: 6px;
-  width: 10px;
-  /* Altura do scroll */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  /* Cor da "thumb" (a parte arrastável do scroll) */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #4f4f4f;
-  /* Cor da "track" (a área onde a thumb se move) */
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #191919;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3f3f3f51;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border: 1px solid #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
