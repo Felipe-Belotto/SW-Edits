@@ -37,7 +37,7 @@ export default function PaginaInicial() {
     scrollX.set(info.offset.x);
   };
 
-  const imagemCapa = "https://i.gifer.com/EwaQ.gif"
+  const imagemCapa = "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif"
 
   return (
     <section className={styles.sectionVideos}>
