@@ -4,8 +4,7 @@
 }
 
 .banner {
-  min-height: 50vh;
-  max-height: 50vh;
+  height: 500px;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.881);
@@ -14,7 +13,7 @@
 
 .capa {
   height: auto;
-  width: 50vw;
+  min-width: 50%;
   border-radius: 8px;
 }
 
@@ -47,9 +46,17 @@
 
 @media screen and (max-width: 1444px) {
 
+  .banner {
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.881);
+    padding: 0;
+  }
+
   .capa {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: auto;
   }
 
   .container {
@@ -78,5 +85,3 @@
     display: flex;
   }
 }
-
-/* @media screen and (max-width: 768px) {} */
