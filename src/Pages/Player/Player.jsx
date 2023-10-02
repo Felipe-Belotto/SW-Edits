@@ -3,6 +3,7 @@ import styles from './Player.module.css';
 import { useParams } from 'react-router-dom';
 import Card from '../../components/Card/Card';
 import { motion, useMotionValue } from 'framer-motion';
+import Favoritar from '../../components/Favoritar/Favoritar';
 
 export default function Player() {
   const [videos, setVideos] = useState([]);
@@ -79,6 +80,7 @@ export default function Player() {
       </div>
 
       <div className={styles.dadosContainer} style={{ backgroundColor: corCategoriaAtual }}>
+        <Favoritar/>
         <h1 className={styles.titulo}>
           <span className={styles.tituloContainer}>
             {' '}
