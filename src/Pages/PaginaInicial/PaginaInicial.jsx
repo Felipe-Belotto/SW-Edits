@@ -7,6 +7,7 @@ export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const scrollX = useMotionValue(0);
+  const [imagemCapaIndex, setImagemCapaIndex] = useState(0);
 
   useEffect(() => {
     fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
@@ -33,19 +34,30 @@ export default function PaginaInicial() {
       });
   }, []);
 
+  useEffect(() => {
+    
+    const intervaloID = setInterval(() => {
+      setImagemCapaIndex((index) => (index + 1) % imagensCapa.length);
+    }, 5000);
+
+    return () => clearInterval(intervaloID);
+  }, []);
+
+  const imagensCapa = [
+    "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif",
+    "https://us.v-cdn.net/6025736/uploads/editor/1f/ujlf9r0xlxgn.gif",
+    "https://j.gifs.com/98W0lz@facebook.gif", 
+  ];
+
   const handleDrag = (_, info) => {
     scrollX.set(info.offset.x);
   };
 
-  const imagemCapa = "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif"
-
   return (
     <section className={styles.sectionVideos}>
-      <div  className={styles.banner}> 
-      <img src={imagemCapa}
-      className={styles.capa}/>
-
-</div>
+      <div className={styles.banner}>
+        <img src={imagensCapa[imagemCapaIndex]} className={styles.capa} />
+      </div>
 
       {categorias.map((categoria) => (
         <motion.section

@@ -4,6 +4,8 @@
 }
 
 .banner {
+  min-height: 50vh;
+  max-height: 50vh;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.881);
@@ -11,7 +13,7 @@
 }
 
 .capa {
-  height: 100%;
+  height: auto;
   width: 50vw;
   border-radius: 8px;
 }
