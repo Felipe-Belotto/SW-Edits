@@ -4,6 +4,7 @@ import PaginaNovoVideo from './Pages/PaginaNovoVideo/PaginaNovoVideo';
 import PaginaInicial from './Pages/PaginaInicial/PaginaInicial';
 import Player from './Pages/Player/Player';
 import PaginaNovaCategoria from './Pages/PaginaNovaCategoria/PaginaNovaCategoria';
+import PaginaFavoritos from './Pages/PaginaFavoritos/PaginaFavoritos';
 
 function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ function AppRoutes() {
           <Route index element={<PaginaInicial />} />
           <Route path="novovideo" element={<PaginaNovoVideo />} />
           <Route path="novaCategoria" element={<PaginaNovaCategoria />} />
+          <Route path="favoritos" element={<PaginaFavoritos />} />
           <Route path="/:id" element={<Player />}></Route>
         </Route>
       </Routes>

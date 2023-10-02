@@ -80,7 +80,7 @@ export default function Player() {
       </div>
 
       <div className={styles.dadosContainer} style={{ backgroundColor: corCategoriaAtual }}>
-        <Favoritar/>
+        <Favoritar />
         <h1 className={styles.titulo}>
           <span className={styles.tituloContainer}>
             {' '}

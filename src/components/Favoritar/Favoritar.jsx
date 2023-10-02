@@ -1,14 +1,16 @@
 import { Button } from '@mui/material';
 import styles from './Favoritar.module.css';
-import { useState } from 'react';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import GradeIcon from '@mui/icons-material/Grade';
+import { useFavoritos } from '../../context/VideosFavoritos';
+import { useEffect, useState } from 'react';
 
-export default function Favoritar() {
+export default function Favoritar(props) {
+  const { adicionarFavorito, removerFavorito,limpaFavoritos, videosFavoritos } = useFavoritos();
   const [estadoFavorito, setEstadoFavorito] = useState(false);
 
   const botaoFavoritar = {
-    display:"flex",
+    display: "flex",
     gap: "16px",
     backgroundColor: "rgba(86, 86, 86, 0.26)",
     color: "white",
@@ -16,7 +18,7 @@ export default function Favoritar() {
   };
 
   const botaoFavoritado = {
-    display:"flex",
+    display: "flex",
     gap: "16px",
     backgroundColor: "rgba(122, 122, 122, 0.26)",
     color: "white",
@@ -25,22 +27,17 @@ export default function Favoritar() {
 
   const aoClicar = () => {
     setEstadoFavorito(!estadoFavorito);
+
+  /*   if (estadoFavorito === false) {
+      removerFavorito(props.id); // Substitua 'video.id' com o identificador real do vídeo
+    } else {
+      adicionarFavorito(props.video); // Substitua 'video' com o objeto do vídeo real
+    } */
   };
 
-  if(estadoFavorito === false) {
-    return (
-      <Button onClick={aoClicar} style={botaoFavoritar}>
-       <StarOutlineIcon/>
-      </Button>
-    );
-  } 
-  else{
-    return (
-      <Button onClick={aoClicar} style={botaoFavoritado}>
-        <GradeIcon style={{color:"orange"}}/>
-      </Button>
-    )
-  }
-
-  
+  return (
+    <Button onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
+      {estadoFavorito ? <GradeIcon style={{ color: "orange" }} /> : <StarOutlineIcon />}
+    </Button>
+  );
 }
