@@ -57,6 +57,7 @@
   .capa {
     height: 90%;
     width: auto;
+    max-width: 90%;
   }
 
   .container {
