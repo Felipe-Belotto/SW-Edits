@@ -76,6 +76,11 @@ export function SelectFormCategorias(props) {
     color: 'white',
   };
 
+  const SelectOption = {
+    color:"white",
+    backgroundColor:"#4c5055",
+  }
+
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
@@ -99,6 +104,7 @@ export function SelectFormCategorias(props) {
           onChange={props.onChange}
           value={props.value}
           required
+          MenuProps={{ PaperProps: { style: SelectOption } }}
         >
           {categorias.map((categoria) => {
             return (
