@@ -22,6 +22,7 @@
   flex-direction: column;
   justify-content: start;
   flex: 1;
+  padding: 0 0 20px 0;
 }
 
 .categoria__info {
@@ -34,7 +35,7 @@
 .categoria__nome {
   color: #f8f8f8;
   font-size: 32px;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .categoria__videos {
@@ -72,7 +73,7 @@
   .categoria__nome {
     color: #f8f8f8;
     font-size: 24px;
-    padding: 20px 40px;
+    padding: 15px 25px;
   }
 
   .categoria__descricao {
