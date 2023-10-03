@@ -2,12 +2,12 @@ import { Button } from '@mui/material';
 import styles from './Favoritar.module.css';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import GradeIcon from '@mui/icons-material/Grade';
-import { useFavoritos } from '../../context/VideosFavoritos';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+/* import { FavoritosContext, useFavoritoContext } from '../../context/FavoritadosContext'; */
 
 export default function Favoritar(props) {
-  const { adicionarFavorito, removerFavorito,limpaFavoritos, videosFavoritos } = useFavoritos();
   const [estadoFavorito, setEstadoFavorito] = useState(false);
+  /* const { adicionarFavorito} = useFavoritoContext() */
 
   const botaoFavoritar = {
     display: "flex",
@@ -32,14 +32,26 @@ const iconeFavoritado = <GradeIcon />;
 
   const aoClicar = () => {
     setEstadoFavorito(!estadoFavorito);
-
-  /*   if (estadoFavorito === false) {
-      removerFavorito(props.id); // Substitua 'video.id' com o identificador real do vídeo
-    } else {
-      adicionarFavorito(props.video); // Substitua 'video' com o objeto do vídeo real
-    } */
+   /*  adicionarFavorito(props.video) */
+   console.log("A função de favoritar está em desenvolvimento")
   };
 
+  function horaAtual() {
+    const dataAtual = new Date();
+
+    // Extraia a hora, os minutos e os segundos
+    const horas = dataAtual.getHours();
+    const minutos = dataAtual.getMinutes();
+    const segundos = dataAtual.getSeconds();
+    const horaFormatada = `${horas}:${minutos}:${segundos}`;
+    return horaFormatada
+  }
+
+  useEffect(() => {
+    console.log((estadoFavorito ? `ativado (${horaAtual()})` : `desativado (${horaAtual()})`))
+    
+  })
+  
   return (
     <Button onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
     {estadoFavorito ? iconeFavoritado : iconeFavoritar}
