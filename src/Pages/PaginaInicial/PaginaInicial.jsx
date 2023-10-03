@@ -46,9 +46,10 @@ export default function PaginaInicial() {
   const imagensCapa = [
     "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif",
     "https://media.tenor.com/mU8MpZmeQgYAAAAC/star-wars-rogue-one.gif",
+    "https://media4.giphy.com/media/FHWLCr4nIJyOMar5eh/giphy.gif?cid=ecf05e47ca2f92c95i1xca6ut57ofruzrki00th9oqiyg6li&ep=v1_gifs_related&rid=giphy.gif&ct=g",
+    "https://media1.giphy.com/media/5H9mE4GpY9UwTsIAXy/giphy.gif",
     "https://us.v-cdn.net/6025736/uploads/editor/1f/ujlf9r0xlxgn.gif",
     "https://j.gifs.com/98W0lz@facebook.gif", 
-    "https://media.tenor.com/gH342qiII6MAAAAd/ahsoka-anakin.gif"
   ];
 
   const handleDrag = (_, info) => {
