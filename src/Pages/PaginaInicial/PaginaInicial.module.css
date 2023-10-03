@@ -29,13 +29,12 @@
   flex-direction: column;
   justify-content: center;
   width: auto;
-  padding: 8px;
 }
 
 .categoria__nome {
-  padding: 0 0 0 16px;
   color: #f8f8f8;
   font-size: 32px;
+  padding: 40px;
 }
 
 .categoria__videos {
@@ -73,6 +72,7 @@
   .categoria__nome {
     color: #f8f8f8;
     font-size: 24px;
+    padding: 20px 40px;
   }
 
   .categoria__descricao {

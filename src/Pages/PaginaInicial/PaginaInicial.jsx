@@ -15,11 +15,19 @@ export default function PaginaInicial() {
       .then((dados) => setVideos(dados));
   }, []);
 
-  const ajustarOpacidade = (corHex, opacidade) => {
+  const ajustarOpacidade = (corHex, fatorPreto, opacidade) => {
     const cleanedHex = corHex.replace('#', '');
     const [r, g, b] = cleanedHex.match(/.{1,2}/g).map((value) => parseInt(value, 16));
-    return `rgba(${r}, ${g}, ${b}, ${opacidade})`;
+  
+    // Adicionar mais preto à cor
+    const novoR = Math.round(r * (1 - fatorPreto));
+    const novoG = Math.round(g * (1 - fatorPreto));
+    const novoB = Math.round(b * (1 - fatorPreto));
+  
+    return `rgba(${novoR}, ${novoG}, ${novoB}, ${opacidade})`;
   };
+  
+  
 
   useEffect(() => {
     fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias')
@@ -28,7 +36,7 @@ export default function PaginaInicial() {
         setCategorias(
           dados.map((categoria) => ({
             ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.1),
+            corDeFundo: ajustarOpacidade(categoria.cor,0.9 , 0.9),
           }))
         );
       });
@@ -80,7 +88,7 @@ export default function PaginaInicial() {
               overflowX: 'auto',
               scrollSnapType: 'x mandatory',
               x: scrollX,
-              background: 'rgba(0, 0, 0, 0.293)',
+              /* background: 'rgba(0, 0, 0, 0.293)', */
             }}
           >
             {videos
