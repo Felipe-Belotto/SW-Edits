@@ -1,5 +1,7 @@
 # SW Edits - Star Wars Edits
 
+[Visite o site](https://sw-edits.vercel.app/)
+
 ## Descrição
 
 Bem-vindo ao SW Edits, o seu destino definitivo para experimentar Star Wars como nunca antes! SW Edits é um site dedicado a oferecer uma experiência única ao apresentar cenas de filmes Star Wars cuidadosamente editadas para proporcionar momentos emocionantes e inesquecíveis.
