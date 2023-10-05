@@ -1,4 +1,4 @@
-.botaoCabecalho {
+.botao {
   display: flex;
   width: 200px;
   height: 54px;
@@ -17,8 +17,8 @@
   text-decoration: none;
 }
 
-.botaoCabecalho:hover {
-  background-color: #010f2196;
+.botao:hover {
+  background-color: #13131396;
 }
 
 @media screen and (max-width: 1000px) {

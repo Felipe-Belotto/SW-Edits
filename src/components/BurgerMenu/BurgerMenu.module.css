@@ -5,7 +5,7 @@
 .menu {
   position: absolute;
   display: flex;
-  gap: 8px;
+  gap: 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13,9 +13,10 @@
   top: 100%;
   right: 0%;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.696);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(55, 55, 55);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 100;
   padding: 20px;
 
 }
@@ -28,7 +29,25 @@
   gap: 16px;
 }
 
+.titulo {
+  padding: 8px 0;
+  background-color: rgba(18, 18, 18, 0.727);
+  width: calc(100% - 4px);
+  font-size: 18px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgb(33, 33, 33);
+}
+
 .botao {
   background-color: transparent;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 90vw;
+    padding: 20px 0;
+    right: 0;
+  }
 }

@@ -17,9 +17,12 @@ export default function PaginaNovaCategoria () {
     })
 
     const limparDados = () => {
-      setNome("")
-      setDescricao("")
-      setCor("")
+        const confirmacao = confirm("Certeza que irá apagar todos os dados ?") 
+        if(confirmacao) {
+          setNome("")
+          setDescricao("")
+          setCor("")
+        }
     }
 
     const handleSubmit = (event) => {
@@ -57,8 +60,8 @@ export default function PaginaNovaCategoria () {
           }}/>
 
           <div className={styles.botoesContainer}>
-            <Botao label="Salvar" type="submit" />
             <Botao label="Limpar" color="error" onClick={limparDados} />
+            <Botao label="Salvar" type="submit" />
           </div>
       </form>
 

@@ -38,7 +38,9 @@ export default function PaginaNovoVideo() {
     setDados([titulo, video, imagem, categoria, descricao, codigo]);
   });
 
-  function limparDados() {
+  const limparDados = () => {
+    const confirmacao = confirm("Certeza que irá apagar todos os dados ?") 
+    if(confirmacao) {
     setTitulo('');
     setCodigoVideo('')
     setVideo('');
@@ -46,7 +48,8 @@ export default function PaginaNovoVideo() {
     setCategoria('');
     setDescricao('');
     setCodigo('');
-  }
+    }
+}
 
   return (
     <section className={styles.formulario}>
@@ -100,17 +103,8 @@ export default function PaginaNovoVideo() {
           value={codigo}
         />
         <div className={styles.botoes__container}>
-          <div className={styles.botoesEsquerda}>
+            <Botao label="Limpar" color="error" onClick={limparDados} />   
             <Botao label="Salvar" type="submit" />
-            <Botao label="Limpar" color="error" onClick={limparDados} />
-          </div>
-
-          <div className={styles.botoesDireita}>
-          <Link to={"/novaCategoria"}>
-          <Botao label="Nova categoria" />
-          </Link>
-          </div>
-          
         </div>
       </form>
     </section>

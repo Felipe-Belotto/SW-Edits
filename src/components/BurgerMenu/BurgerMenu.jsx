@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './BurgerMenu.module.css';
 import Hamburger from 'hamburger-react';
-import BotaoNovo from '../BotaoNovo/BotaoNovo';
 import { Link } from 'react-router-dom';
+import BotaoLink from '../BotaoLink/BotaoLink';
 
 export default function BurgerMenu(props) {
   const [isOpen, setOpen] = useState(false);
@@ -15,11 +15,12 @@ export default function BurgerMenu(props) {
       
       {isOpen && (
         <nav className={styles.menu}>
+          <BotaoLink label={"Inicio"} link="/"/>
+          <BotaoLink label={"Favoritos"} link="/favoritos"/>
           <div className={styles.adm}>
-            <h1>Administração</h1>
-            <Link to="/novovideo" className={styles.link}>
-            <BotaoNovo label="Novo vídeo" />
-            </Link>
+            <h1 className={styles.titulo}>Administração</h1>    
+            <BotaoLink label="Novo vídeo" link="/novovideo" />
+            <BotaoLink label="Nova categoria" link="/novacategoria" />
             </div>
         </nav>
       )}
