@@ -4,7 +4,7 @@
 }
 
 .banner {
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
   background-color: rgba(21, 21, 21, 0.542);
@@ -12,11 +12,10 @@
 }
 
 .capa {
-  border: 1px solid black;
+  border: 5px solid black;
   border-radius: 8px;
   height: auto;
   min-width: 50%;
-
 }
 
 .categoriaContainer {
