@@ -12,9 +12,11 @@
 }
 
 .capa {
+  border: 1px solid black;
+  border-radius: 8px;
   height: auto;
   min-width: 50%;
-  border-radius: 8px;
+
 }
 
 .categoriaContainer {
