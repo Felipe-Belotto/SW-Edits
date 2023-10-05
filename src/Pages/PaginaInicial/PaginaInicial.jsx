@@ -32,7 +32,7 @@ export default function PaginaInicial() {
         setCategorias(
           dados.map((categoria) => ({
             ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.84, 0.5),
+            corDeFundo: ajustarOpacidade(categoria.cor, 0.9, 0.65),
           }))
         );
       });
