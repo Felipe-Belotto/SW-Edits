@@ -14,12 +14,12 @@ export default function BurgerMenu() {
   return (
     <div className={styles.menuContainer}>
       <button onClick={handleMenuToggle} className={styles.botao}><MenuIcon/></button>
-      <Menu width={"20%"} menuClassName={styles.menu} isOpen={menuOpen} onClose={handleMenuToggle} right >
+     {/*  <Menu width={"20%"} menuClassName={styles.menu} isOpen={menuOpen} onClose={handleMenuToggle} right >
         <a id="home" className={styles.menu__item} href="/">
           Home
         </a>
   
-      </Menu>
+      </Menu> */}
     </div>
   );
 }
