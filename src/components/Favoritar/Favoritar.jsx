@@ -64,10 +64,6 @@ const iconeFavoritado = <GradeIcon />;
     <Button onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
     {estadoFavorito ? iconeFavoritado : iconeFavoritar}
     </Button>
-    <Link to={"/favoritos"}>
-    <Button style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
-    Favoritos
-    </Button></Link>
     </>
 
   );
