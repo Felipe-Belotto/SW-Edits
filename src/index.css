@@ -16,8 +16,14 @@
 }
 
 body {
-  min-height: 100vh;
+
   background-image: url(/public/Fundo.jpg);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body::-webkit-scrollbar-track {

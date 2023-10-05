@@ -108,7 +108,7 @@ export function SelectFormCategorias(props) {
         >
           {categorias.map((categoria) => {
             return (
-            <MenuItem value={categoria.nome}>{categoria.nome}</MenuItem>
+            <MenuItem value={categoria.nome} >{categoria.nome}</MenuItem>
             )
           })}
         </Select>

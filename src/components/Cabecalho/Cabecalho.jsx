@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import BotaoNovoVideo from '../BotaoNovoVideo/BotaoNovoVideo';
 import styles from './Cabecalho.module.css';
 import Logo from '/public/Logo.png';
 import { useEffect, useState } from 'react';
@@ -22,20 +21,8 @@ export default function Cabecalho() {
       </Link>
 
       <nav>
-       {/*  <Link
-          to="./novovideo"
-          style={{ display: displayBotao, textDecoration: 'none' }}
-        >
-          <BotaoNovoVideo />
-        </Link> */}
-
       <BurgerMenu/>
       </nav>
-
-
-
-      
-
     </header>
   );
 }

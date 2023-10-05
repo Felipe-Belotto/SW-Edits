@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
-import { slide as Menu } from 'react-burger-menu';
 import styles from './BurgerMenu.module.css';
-import MenuIcon from '@mui/icons-material/Menu';
-import { width } from '@mui/system';
+import Hamburger from 'hamburger-react';
+import BotaoNovo from '../BotaoNovo/BotaoNovo';
+import { Link } from 'react-router-dom';
 
-export default function BurgerMenu() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
-  };
+export default function BurgerMenu(props) {
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className={styles.menuContainer}>
-      <button onClick={handleMenuToggle} className={styles.botao}><MenuIcon/></button>
-     {/*  <Menu width={"20%"} menuClassName={styles.menu} isOpen={menuOpen} onClose={handleMenuToggle} right >
-        <a id="home" className={styles.menu__item} href="/">
-          Home
-        </a>
-  
-      </Menu> */}
+    <div className={styles.container}>
+      <button onClick={props.onClick} className={styles.botao}>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+      </button>
+      
+      {isOpen && (
+        <nav className={styles.menu}>
+          <div className={styles.adm}>
+            <h1>Administração</h1>
+            <Link to="/novovideo" className={styles.link}>
+            <BotaoNovo label="Novo vídeo" />
+            </Link>
+            </div>
+        </nav>
+      )}
     </div>
   );
 }

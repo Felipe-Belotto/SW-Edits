@@ -48,8 +48,6 @@ export default function PaginaNovoVideo() {
     setCodigo('');
   }
 
-  console.log(dados)
-
   return (
     <section className={styles.formulario}>
       <h1 className={styles.titulo}>Novo vídeo</h1>
