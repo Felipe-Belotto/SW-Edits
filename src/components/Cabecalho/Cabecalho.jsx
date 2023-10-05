@@ -3,6 +3,7 @@ import BotaoNovoVideo from '../BotaoNovoVideo/BotaoNovoVideo';
 import styles from './Cabecalho.module.css';
 import Logo from '/public/Logo.png';
 import { useEffect, useState } from 'react';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 export default function Cabecalho() {
   const location = useLocation();
@@ -21,13 +22,20 @@ export default function Cabecalho() {
       </Link>
 
       <nav>
-        <Link
+       {/*  <Link
           to="./novovideo"
           style={{ display: displayBotao, textDecoration: 'none' }}
         >
           <BotaoNovoVideo />
-        </Link>
+        </Link> */}
+
+      <BurgerMenu/>
       </nav>
+
+
+
+      
+
     </header>
   );
 }
