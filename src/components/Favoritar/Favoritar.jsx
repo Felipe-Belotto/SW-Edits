@@ -3,11 +3,20 @@ import styles from './Favoritar.module.css';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import GradeIcon from '@mui/icons-material/Grade';
 import { useContext, useEffect, useState } from 'react';
-/* import { FavoritosContext, useFavoritoContext } from '../../context/FavoritadosContext'; */
+import { FavoritosContext } from '../../context/FavoritadosContext';
+import { Link } from 'react-router-dom';
 
 export default function Favoritar(props) {
+  const { listaFavoritos, setListaFavoritos, adicionarVideo } = useContext(FavoritosContext);
   const [estadoFavorito, setEstadoFavorito] = useState(false);
-  /* const { adicionarFavorito} = useFavoritoContext() */
+  
+  const verificaExistencia = () => listaFavoritos.some((v) => v.id === props.id);
+  
+  useEffect(() => {
+    setEstadoFavorito(verificaExistencia());
+  }, [listaFavoritos, props.id]); 
+  
+  
 
   const botaoFavoritar = {
     display: "flex",
@@ -32,8 +41,7 @@ const iconeFavoritado = <GradeIcon />;
 
   const aoClicar = () => {
     setEstadoFavorito(!estadoFavorito);
-   /*  adicionarFavorito(props.video) */
-   console.log("A função de favoritar está em desenvolvimento")
+    adicionarVideo(props.dados)
   };
 
   function horaAtual() {
@@ -48,13 +56,19 @@ const iconeFavoritado = <GradeIcon />;
   }
 
   useEffect(() => {
-    console.log((estadoFavorito ? `ativado (${horaAtual()})` : `desativado (${horaAtual()})`))
-    
+    console.log(listaFavoritos)
   })
   
   return (
+    <>    
     <Button onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
     {estadoFavorito ? iconeFavoritado : iconeFavoritar}
     </Button>
+    <Link to={"/favoritos"}>
+    <Button style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
+    Favoritos
+    </Button></Link>
+    </>
+
   );
 }

@@ -6,16 +6,13 @@ import PaginaInicial from './Pages/PaginaInicial/PaginaInicial';
 import Player from './Pages/Player/Player';
 import PaginaNovaCategoria from './Pages/PaginaNovaCategoria/PaginaNovaCategoria';
 import PaginaFavoritos from './Pages/PaginaFavoritos/PaginaFavoritos';
+import FavoritosProvider from './context/FavoritadosContext';
 
-export const FavoritadosContext = createContext();
 
 function AppRoutes() {
- 
-  const [favoritos, setFavoritos] = useState([]);
 
   return (
- 
-    <FavoritadosContext.Provider value={{ favoritos, setFavoritos }}>
+      <FavoritosProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PaginaBase />}>
@@ -27,7 +24,7 @@ function AppRoutes() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </FavoritadosContext.Provider>
+      </FavoritosProvider>
   );
 }
 

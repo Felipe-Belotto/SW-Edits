@@ -80,7 +80,7 @@ export default function Player() {
       </div>
 
       <div className={styles.dadosContainer} style={{ backgroundColor: corCategoriaAtual }}>
-       {/*  <Favoritar video={video} /> */}
+        <Favoritar dados={video} id={video.id} />
         <h1 className={styles.titulo}>
           <span className={styles.tituloContainer}>
             {' '}
