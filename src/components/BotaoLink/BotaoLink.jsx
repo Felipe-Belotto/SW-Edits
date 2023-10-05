@@ -6,7 +6,7 @@ export default function BotaoLink(props) {
 
   return (
     <Link to={props.link} style={{textDecoration: "none"}}>
-    <button onClick={props.onClick} className={styles.botao}>{props.label}</button>
+    <button onClick={props.onClick} className={styles.botao} >{props.label}</button>
     </Link>
   ) 
 

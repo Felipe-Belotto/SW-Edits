@@ -41,11 +41,12 @@ export default function BurgerMenu(props) {
       
       {isOpen && (
         <nav ref={menuRef} className={styles.menu}>
-          <BotaoLink label={"Inicio"} link="/"/>
-          <BotaoLink label={"Favoritos"} link="/favoritos"/>
+             <h1 className={styles.titulo}>Menu</h1>    
+          <BotaoLink label={"Inicio"} link="/" />
+          <BotaoLink label={"Favoritos"} link="/favoritos" />
           <div className={styles.adm}>
             <h1 className={styles.titulo}>Administração</h1>    
-            <BotaoLink label="Novo vídeo" link="/novovideo" />
+            <BotaoLink label="Novo vídeo" link="/novovideo"  />
             <BotaoLink label="Nova categoria" link="/novacategoria" />
           </div>
         </nav>
