@@ -105,7 +105,7 @@ export default function PaginaInicial() {
           
           <Swiper
           slidesPerView={Number(quantidadeSlides)}
-          spaceBetween={8}
+          spaceBetween={0}
           pagination={{
             clickable: true,
           }}
