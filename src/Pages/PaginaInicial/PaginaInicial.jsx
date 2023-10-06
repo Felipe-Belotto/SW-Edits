@@ -63,7 +63,7 @@ export default function PaginaInicial() {
     if (larguraTela > 768) {
       setQuantidadeSlides(5);
     } else {
-      setQuantidadeSlides(2);
+      setQuantidadeSlides(2.5);
     }
   }, [larguraTela]);
 
