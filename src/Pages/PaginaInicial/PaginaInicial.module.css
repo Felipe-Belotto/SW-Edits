@@ -60,11 +60,9 @@
     max-height: 200px;
     display: flex;
     justify-content: center;
-    padding: 15px;
   }
 
   .capa {
-    height: 90%;
     width: auto;
     max-width: 90%;
   }
