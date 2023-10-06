@@ -109,7 +109,6 @@ export default function PaginaInicial() {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
           className={styles.slider}
           >
           
