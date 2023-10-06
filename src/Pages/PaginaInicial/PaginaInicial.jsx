@@ -16,6 +16,7 @@ export default function PaginaInicial() {
   const [categorias, setCategorias] = useState([]);
   const [imagemCapaIndex, setImagemCapaIndex] = useState(0);
   const [quantidadeSlides, setQuantidadeSlides] = useState("")
+  const [slideCentralizado, setslideCentralizado] = useState("")
 
   useEffect(() => {
     fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
@@ -62,8 +63,10 @@ export default function PaginaInicial() {
   
     if (larguraTela > 768) {
       setQuantidadeSlides(5);
+      setslideCentralizado(false)
     } else {
-      setQuantidadeSlides(2.5);
+      setQuantidadeSlides(1.5);
+      setslideCentralizado(true)
     }
   }, [larguraTela]);
 
@@ -82,13 +85,6 @@ export default function PaginaInicial() {
     scrollX.set(info.offset.x);
   };
 
-  const linearGradienteCategorias = (index) => {
-    if (index < categorias.length - 1) {
-      return `linear-gradient(to bottom, ${categorias[index].corDeFundo} 90%, ${categorias[index + 1].corDeFundo})`;
-    } else {
-      return categorias[index].corDeFundo;
-    }
-  };
 
   return (
     <>
@@ -98,17 +94,15 @@ export default function PaginaInicial() {
       </div>
 
       {categorias.map((categoria, index) => (
-        <>
+        <section style={{ backgroundColor: categoria.corDeFundo }}>
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
           </div>
           
           <Swiper
           slidesPerView={Number(quantidadeSlides)}
-          spaceBetween={0}
-          pagination={{
-            clickable: true,
-          }}
+          spaceBetween={16}
+          centeredSlides={slideCentralizado}
           className={styles.slider}
           >
           
@@ -119,7 +113,7 @@ export default function PaginaInicial() {
   ))}
           </Swiper>
 
-          </>     
+          </section>     
       ))}
     </section>
     </>
