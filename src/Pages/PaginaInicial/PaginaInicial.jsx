@@ -42,7 +42,7 @@ export default function PaginaInicial() {
         setCategorias(
           dados.map((categoria) => ({
             ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.9, 0.65),
+            corDeFundo: ajustarOpacidade(categoria.cor, 0.9, 0.4),
           }))
         );
       });
@@ -66,7 +66,7 @@ export default function PaginaInicial() {
       setslideCentralizado(false)
     } else {
       setQuantidadeSlides(1.5);
-      setslideCentralizado(true)
+      setslideCentralizado(false)
     }
   }, [larguraTela]);
 
@@ -75,7 +75,6 @@ export default function PaginaInicial() {
     "https://media.tenor.com/mU8MpZmeQgYAAAAC/star-wars-rogue-one.gif",
     "https://media4.giphy.com/media/FHWLCr4nIJyOMar5eh/giphy.gif?cid=ecf05e47ca2f92c95i1xca6ut57ofruzrki00th9oqiyg6li&ep=v1_gifs_related&rid=giphy.gif&ct=g",
     "https://media1.giphy.com/media/5H9mE4GpY9UwTsIAXy/giphy.gif",
-    "https://us.v-cdn.net/6025736/uploads/editor/1f/ujlf9r0xlxgn.gif",
     "https://j.gifs.com/98W0lz@facebook.gif",
   ];
 
@@ -94,7 +93,7 @@ export default function PaginaInicial() {
       </div>
 
       {categorias.map((categoria, index) => (
-        <section style={{ backgroundColor: categoria.corDeFundo }}>
+        <section style={{ backgroundColor: categoria.corDeFundo}}>
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
           </div>
