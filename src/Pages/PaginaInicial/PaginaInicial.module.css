@@ -33,7 +33,7 @@
   color: #f8f8f8;
   font-size: 32px;
   padding: 8px;
-  margin: 0 0 0 5%;
+  margin: 0 0 0 4%;
 }
 
 .categoria__videos {
@@ -47,7 +47,7 @@
 }
 
 .slide__card:first-child {
-  margin: 0 0 0 5%;
+  margin: 0 0 0 4%;
 }
 
 .slide__card {
