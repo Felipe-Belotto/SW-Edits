@@ -50,6 +50,10 @@
   width: 100%;
 }
 
+.slide__card {
+  width: 100%;
+}
+
 @media screen and (max-width: 1444px) {
 
   .banner {

@@ -15,6 +15,7 @@ export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const [imagemCapaIndex, setImagemCapaIndex] = useState(0);
+  const [quantidadeSlides, setQuantidadeSlides] = useState("")
 
   useEffect(() => {
     fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
@@ -54,6 +55,18 @@ export default function PaginaInicial() {
     return () => clearInterval(intervaloID);
   }, []);
 
+  const larguraTela = window.innerWidth;
+
+  useEffect(() => {
+ 
+  
+    if (larguraTela > 768) {
+      setQuantidadeSlides(5);
+    } else {
+      setQuantidadeSlides(2);
+    }
+  }, [larguraTela]);
+
   const imagensCapa = [
     "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif",
     "https://media.tenor.com/mU8MpZmeQgYAAAAC/star-wars-rogue-one.gif",
@@ -91,7 +104,7 @@ export default function PaginaInicial() {
           </div>
           
           <Swiper
-          slidesPerView={5}
+          slidesPerView={Number(quantidadeSlides)}
           spaceBetween={8}
           pagination={{
             clickable: true,
@@ -103,7 +116,7 @@ export default function PaginaInicial() {
           {videos
   .filter((video) => video.categoria === categoria.nome)
   .map((video) => (
-    <SwiperSlide>  <Card key={video.id} {...video} /></SwiperSlide>
+    <SwiperSlide className={styles.slide__card}>  <Card key={video.id} {...video} /></SwiperSlide>
   ))}
           </Swiper>
 
