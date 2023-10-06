@@ -2,6 +2,14 @@ import styles from './PaginaInicial.module.css';
 import { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
 import { motion, useMotionValue } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
@@ -70,39 +78,39 @@ export default function PaginaInicial() {
   };
 
   return (
+    <>
     <section className={styles.sectionVideos}>
       <div className={styles.banner}>
         <img src={imagensCapa[imagemCapaIndex]} className={styles.capa} />
       </div>
 
       {categorias.map((categoria, index) => (
-        <motion.section
-          key={categoria.id}
-          className={styles.categoriaContainer}
-          style={{ background: linearGradienteCategorias(index) }}
-        >
+        <>
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
           </div>
-
-          <motion.div
-            onDrag={handleDrag}
-            style={{
-              width: '100%',
-              display: 'flex',
-              overflowX: 'auto',
-              scrollSnapType: 'x mandatory',
-              x: scrollX,
-            }}
+          
+          <Swiper
+          slidesPerView={5}
+          spaceBetween={8}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className={styles.slider}
           >
-            {videos
-              .filter((video) => video.categoria === categoria.nome)
-              .map((video) => (
-                <Card key={video.id} {...video} />
-              ))}
-          </motion.div>
-        </motion.section>
+          
+          {videos
+  .filter((video) => video.categoria === categoria.nome)
+  .map((video) => (
+    <SwiperSlide>  <Card key={video.id} {...video} /></SwiperSlide>
+  ))}
+          </Swiper>
+
+          </>     
       ))}
     </section>
+    </>
   );
+  
 }
