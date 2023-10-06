@@ -62,7 +62,7 @@ export default function PaginaInicial() {
  
   
     if (larguraTela > 768) {
-      setQuantidadeSlides(5);
+      setQuantidadeSlides(6);
       setslideCentralizado(false)
     } else {
       setQuantidadeSlides(1.5);
@@ -101,7 +101,7 @@ export default function PaginaInicial() {
           
           <Swiper
           slidesPerView={Number(quantidadeSlides)}
-          spaceBetween={16}
+          spaceBetween={8}
           centeredSlides={slideCentralizado}
           className={styles.slider}
           >

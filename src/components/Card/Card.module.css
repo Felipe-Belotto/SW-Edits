@@ -9,6 +9,7 @@
   border: none;
   flex-shrink: 0;
   border-radius: 8px;
+  margin: 8px;
 }
 
 .card:hover {
@@ -46,8 +47,8 @@
 
 @media screen and (max-width: 768px) {
   .card {
+    max-width: 300px;
     width: auto;
     height: auto;
-    margin: 0;
   }
 }
