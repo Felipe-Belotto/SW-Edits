@@ -54,10 +54,6 @@ const iconeFavoritado = <GradeIcon />;
     const horaFormatada = `${horas}:${minutos}:${segundos}`;
     return horaFormatada
   }
-
-  useEffect(() => {
-    console.log(listaFavoritos)
-  })
   
   return (
     <>    

@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import Card from '../../components/Card/Card';
 import { motion, useMotionValue } from 'framer-motion';
 import Favoritar from '../../components/Favoritar/Favoritar';
+import PaginaErro from '../PaginaLoading/PaginaLoading';
+import PaginaLoading from '../PaginaLoading/PaginaLoading';
 
 export default function Player() {
   const [videos, setVideos] = useState([]);
@@ -58,7 +60,7 @@ export default function Player() {
   }, [parametros.id]);
 
   if (!video || loading) {
-    return <div>Carregando...</div>;
+    return  <PaginaLoading /> 
   }
 
   const handleDrag = (_, info) => {

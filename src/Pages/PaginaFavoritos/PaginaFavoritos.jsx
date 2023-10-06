@@ -15,7 +15,6 @@ function PaginaFavoritos () {
 
   useEffect(() => {
     setVideos(listaFavoritos)
-    console.log(videos)
   }, []);
 
   const ajustarOpacidade = (corHex, fatorPreto, opacidade) => {
