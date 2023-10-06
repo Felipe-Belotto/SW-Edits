@@ -7,7 +7,7 @@
   height: 400px;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.72);
+  background-color: rgba(0, 6, 91, 0.223);
 }
 
 .capa {
@@ -33,7 +33,7 @@
   color: #f8f8f8;
   font-size: 32px;
   padding: 8px;
-  margin: 0 0 0 4%;
+  margin: 8px 0 0 4%;
 }
 
 .categoria__videos {
