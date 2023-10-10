@@ -3,6 +3,7 @@ import styles from './BurgerMenu.module.css';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import BotaoLink from '../BotaoLink/BotaoLink';
+import iconeR2D2 from './iconeR2D2.svg'
 
 export default function BurgerMenu(props) {
   const [isOpen, setOpen] = useState(false);
@@ -41,7 +42,7 @@ export default function BurgerMenu(props) {
       
       {isOpen && (
         <nav ref={menuRef} className={styles.menu}>
-             <h1 className={styles.titulo}>Menu</h1>    
+        <h1 className={styles.titulo}>Menu</h1>    
           <BotaoLink label={"Inicio"} link="/" />
           <BotaoLink label={"Favoritos"} link="/favoritos" />
           <div className={styles.adm}>
