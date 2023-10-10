@@ -4,9 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding: 0;
   border: none;
-  flex-shrink: 0;
   border-radius: 8px;
   margin: 8px;
 }
