@@ -3,7 +3,7 @@ import styles from './BurgerMenu.module.css';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import BotaoLink from '../BotaoLink/BotaoLink';
-import iconeR2D2 from './iconeR2D2.svg'
+import iconeR2D2 from './iconeR2D2.svg';
 import BotaoVerMais from '../BotaoVerMais/BotaoVerMais';
 
 export default function BurgerMenu(props) {
@@ -25,7 +25,7 @@ export default function BurgerMenu(props) {
     };
 
     document.addEventListener('click', aoClicarFora);
-    
+
     return () => {
       document.removeEventListener('click', aoClicarFora);
     };
@@ -40,25 +40,23 @@ export default function BurgerMenu(props) {
       >
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </button>
-      
+
       {isOpen && (
         <nav ref={menuRef} className={styles.menu}>
-        <h1 className={styles.titulo}>MENU</h1>    
-          <BotaoLink label={"Inicio"} link="/" />
-          <BotaoLink label={"Favoritos"} link="/favoritos" />
+          <h1 className={styles.titulo}>MENU</h1>
+          <BotaoLink label={'Inicio'} link="/" />
+          <BotaoLink label={'Favoritos'} link="/favoritos" />
           <div className={styles.adm}>
-              
-            <BotaoVerMais 
-            label={ 
-              <h1 className={styles.titulo}>Opções ADM</h1> } 
+            <BotaoVerMais
+              label={<h1 className={styles.titulo}>Opções ADM</h1>}
               conteudo={
-              <div className={styles.botoesADM}>
-              <BotaoLink label="Controle" link="/controle"  />
-              <BotaoLink label="Novo vídeo" link="/novovideo"  />
-              <BotaoLink label="Nova categoria" link="/novacategoria" />
-              </div>}
+                <div className={styles.botoesADM}>
+                  <BotaoLink label="Painel de controle" link="/controle" />
+                  <BotaoLink label="Vídeo +" link="/novovideo" />
+                  <BotaoLink label="Categoria +" link="/novacategoria" />
+                </div>
+              }
             />
-            
           </div>
         </nav>
       )}
