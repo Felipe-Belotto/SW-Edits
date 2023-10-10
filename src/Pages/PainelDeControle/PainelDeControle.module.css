@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   width: auto;
-  padding: 0 30%;
+  padding: 8px 30%;
   border: 1px solid rgb(23, 23, 23);
 }
 
@@ -98,7 +98,7 @@
 
   .categorias__layout {
     width: auto;
-    padding: 0;
+    padding: 8px 0;
     border: 1px solid rgb(23, 23, 23);
   }
 
