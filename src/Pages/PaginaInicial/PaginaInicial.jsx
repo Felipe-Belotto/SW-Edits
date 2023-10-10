@@ -1,8 +1,11 @@
 import styles from './PaginaInicial.module.css';
 import { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
+import { ajustarOpacidade } from '../../function/ajustarOpacidade';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import apiVideos from '../../function/apiVideos';
+import apiCategorias from '../../function/apiCategorias';
 
 export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
@@ -12,48 +15,22 @@ export default function PaginaInicial() {
   const [slideCentralizado, setslideCentralizado] = useState("")
 
   useEffect(() => {
-    fetch('https://6516db6809e3260018ca679b.mockapi.io/Edits')
-      .then((resposta) => resposta.json())
-      .then((dados) => setVideos(dados));
+    apiVideos()
+      .then((dados) => setVideos(dados))
+      .catch((erro) => console.error('Erro ao obter vídeos:', erro));
   }, []);
-
-  const ajustarOpacidade = (corHex, fatorPreto, opacidade) => {
-    const cleanedHex = corHex.replace('#', '');
-    const [r, g, b] = cleanedHex.match(/.{1,2}/g).map((value) => parseInt(value, 16));
-
-    const novoR = Math.round(r * (1 - fatorPreto));
-    const novoG = Math.round(g * (1 - fatorPreto));
-    const novoB = Math.round(b * (1 - fatorPreto));
-
-    return `rgba(${novoR}, ${novoG}, ${novoB}, ${opacidade})`;
-  };
-
-  useEffect(() => {
-    fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias')
-      .then((resposta) => resposta.json())
-      .then((dados) => {
-        setCategorias(
-          dados.map((categoria) => ({
-            ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor, 0.8, 0.4),
-          }))
-        );
-      });
-  }, []);
-
-  useEffect(() => {
-    const intervaloID = setInterval(() => {
-      setImagemCapaIndex((index) => (index + 1) % imagensCapa.length);
-    }, 5000);
-
-    return () => clearInterval(intervaloID);
-  }, []);
-
-  const larguraTela = window.innerWidth;
-
-  useEffect(() => {
- 
   
+
+  useEffect(() => {
+    apiCategorias((categoriasAtualizadas) => {
+      setCategorias(categoriasAtualizadas);
+    });
+  }, []);
+
+  
+  const larguraTela = window.innerWidth;
+  
+  useEffect(() => {
     if (larguraTela > 768) {
       setQuantidadeSlides(6);
       setslideCentralizado(false)
@@ -62,7 +39,7 @@ export default function PaginaInicial() {
       setslideCentralizado(false)
     }
   }, [larguraTela]);
-
+  
   const imagensCapa = [
     "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif",
     "https://media.tenor.com/mU8MpZmeQgYAAAAC/star-wars-rogue-one.gif",
@@ -71,8 +48,14 @@ export default function PaginaInicial() {
     "https://j.gifs.com/98W0lz@facebook.gif",
   ];
 
+  useEffect(() => {
+    const intervaloID = setInterval(() => {
+      setImagemCapaIndex((index) => (index + 1) % imagensCapa.length);
+    }, 5000);
+    return () => clearInterval(intervaloID);
+  }, []);
+
   return (
-    <>
     <section className={styles.sectionVideos}>
       
       <div className={styles.banner}>
@@ -93,17 +76,13 @@ export default function PaginaInicial() {
           className={styles.slider}
           >
           
-          {videos
-  .filter((video) => video.categoria === categoria.nome)
-  .map((video) => (
-    <SwiperSlide className={styles.slide__card}>  <Card key={video.id} {...video} /></SwiperSlide>
-  ))}
+          {videos.filter((video) => video.categoria === categoria.nome).map((video) => (
+          <SwiperSlide className={styles.slide__card}>  <Card key={video.id} {...video} /></SwiperSlide>))}
           </Swiper>
 
           </section>     
       ))}
     </section>
-    </>
   );
   
 }

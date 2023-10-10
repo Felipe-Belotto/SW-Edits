@@ -3,12 +3,13 @@ import { useContext, useEffect, useState } from 'react';
 import { motion, useMotionValue } from 'framer-motion';
 import Card from '../../components/Card/Card';
 import { FavoritosContext } from '../../context/FavoritadosContext';
+import { ajustarOpacidade } from '../../function/ajustarOpacidade';
+import apiCategorias from '../../function/apiCategorias';
 
 
 function PaginaFavoritos () {
 
   const { listaFavoritos, setListaFavoritos, adicionarVideo } = useContext(FavoritosContext)
-
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const scrollX = useMotionValue(0);
@@ -17,28 +18,10 @@ function PaginaFavoritos () {
     setVideos(listaFavoritos)
   }, []);
 
-  const ajustarOpacidade = (corHex, fatorPreto, opacidade) => {
-    const cleanedHex = corHex.replace('#', '');
-    const [r, g, b] = cleanedHex.match(/.{1,2}/g).map((value) => parseInt(value, 16));
-
-    const novoR = Math.round(r * (1 - fatorPreto));
-    const novoG = Math.round(g * (1 - fatorPreto));
-    const novoB = Math.round(b * (1 - fatorPreto));
-  
-    return `rgba(${novoR}, ${novoG}, ${novoB}, ${opacidade})`;
-  };
-  
   useEffect(() => {
-    fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias')
-      .then((resposta) => resposta.json())
-      .then((dados) => {
-        setCategorias(
-          dados.map((categoria) => ({
-            ...categoria,
-            corDeFundo: ajustarOpacidade(categoria.cor,0.9 , 0.9),
-          }))
-        );
-      });
+    apiCategorias((categoriasAtualizadas) => {
+      setCategorias(categoriasAtualizadas);
+    });
   }, []);
 
   

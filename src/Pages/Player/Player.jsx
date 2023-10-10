@@ -6,6 +6,7 @@ import { motion, useMotionValue } from 'framer-motion';
 import Favoritar from '../../components/Favoritar/Favoritar';
 import PaginaErro from '../PaginaLoading/PaginaLoading';
 import PaginaLoading from '../PaginaLoading/PaginaLoading';
+import { ajustarOpacidade } from '../../function/ajustarOpacidade';
 
 export default function Player() {
   const [videos, setVideos] = useState([]);
@@ -17,12 +18,6 @@ export default function Player() {
   const parametros = useParams();
 
   window.scrollTo(0, 0);
-
-  const ajustarOpacidade = (corHex, opacidade) => {
-    const cleanedHex = corHex.replace('#', '');
-    const [r, g, b] = cleanedHex.match(/.{1,2}/g).map((value) => parseInt(value, 16));
-    return `rgba(${r}, ${g}, ${b}, ${opacidade})`;
-  };
 
   const carregarDados = async () => {
     try {
@@ -41,7 +36,7 @@ export default function Player() {
       const categoriaEncontrada = dadosCategorias.find((categoria) => categoria.nome === dadosVideo.categoria);
 
       if (categoriaEncontrada) {
-        setCorCategoriaAtual(ajustarOpacidade(categoriaEncontrada.cor, 0.1));
+        setCorCategoriaAtual(ajustarOpacidade(categoriaEncontrada.cor, 0.8, 0.4));
       }
 
       setVideosRelacionados(

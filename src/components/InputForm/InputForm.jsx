@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import styles from './InputForm.module.css';
 import { Children, useEffect, useState } from 'react';
+import apiCategorias from '../../function/apiCategorias';
 
 export default function InputForm(props) {
   const labelStyles = {
@@ -84,11 +85,9 @@ export function SelectFormCategorias(props) {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias')
-      .then((resposta) => resposta.json())
-      .then((dados) => {
-        setCategorias(dados);
-      });
+    apiCategorias((categoriasAtualizadas) => {
+      setCategorias(categoriasAtualizadas);
+    });
   }, []);
 
   return (

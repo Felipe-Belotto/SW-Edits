@@ -15,6 +15,7 @@
   font-family: 'Raleway', sans-serif;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
