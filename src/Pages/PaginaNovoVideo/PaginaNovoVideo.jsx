@@ -29,7 +29,6 @@ export default function PaginaNovoVideo() {
 
   const submitEnviarNovoVideo = (event) => {
     event.preventDefault();
-    alert(`Video adicionado com sucesso !`);
     EnviarNovoVideo(titulo,video,imagem,categoria,descricao)
     setTitulo('');
     setCodigoVideo('')

@@ -30,7 +30,7 @@
   height: 54px;
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  gap: 8px;
 }
 
 .preview__imagem__container {

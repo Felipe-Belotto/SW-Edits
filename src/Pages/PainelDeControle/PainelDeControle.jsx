@@ -58,8 +58,8 @@ export default function PainelDeControle() {
     <>
     <section className={styles.sectionVideos}>
       
-      {categorias.map((categoria, index) => (
-        <section style={{ backgroundColor: categoria.corDeFundo}}>
+      {categorias.map((categoria) => (
+        <section style={{ backgroundColor: categoria.corDeFundo}} key={categoria.id}>
           <div className={styles.categoria__info}>
             <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
           </div>
@@ -69,12 +69,20 @@ export default function PainelDeControle() {
           spaceBetween={8}
           centeredSlides={slideCentralizado}
           className={styles.slider}
+          key={categoria.id}
           >
           
           {videos
   .filter((video) => video.categoria === categoria.nome)
   .map((video) => (
-    <SwiperSlide className={styles.slide__card}>  <CardADM key={video.id} {...video} /></SwiperSlide>
+
+    <SwiperSlide 
+    key={video.id} 
+    className={styles.slide__card}>
+      
+      <CardADM key={video.id} {...video} />
+      
+      </SwiperSlide>
   ))}
           </Swiper>
 
