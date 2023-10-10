@@ -3,13 +3,7 @@ import { useEffect, useState } from 'react';
 import Card from '../../components/Card/Card';
 import { motion, useMotionValue } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Pagination } from 'swiper/modules';
 
 export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
@@ -85,12 +79,15 @@ export default function PaginaInicial() {
   };
 
 
+
   return (
     <>
     <section className={styles.sectionVideos}>
+      
       <div className={styles.banner}>
         <img src={imagensCapa[imagemCapaIndex]} className={styles.capa} />
       </div>
+     
 
       {categorias.map((categoria, index) => (
         <section style={{ backgroundColor: categoria.corDeFundo}}>

@@ -9,6 +9,7 @@
 
 .logo {
   display: flex;
+  align-items: center;
   height: auto;
   width: 200px;
   flex-shrink: 0;
@@ -16,6 +17,21 @@
 
 .logo:hover {
   filter: opacity(90%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navItem {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navItem:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
