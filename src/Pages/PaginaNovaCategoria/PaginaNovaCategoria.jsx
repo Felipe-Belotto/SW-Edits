@@ -4,6 +4,7 @@ import styles from './PaginaNovaCategoria.module.css'
 import { FormControl } from '@mui/base'
 import Botao from '../../components/Botao/Botao'
 import EnviarNovaCategoria from './EnviarNovaCategoria'
+import { Alert } from '@mui/material'
 
 export default function PaginaNovaCategoria () {
 
