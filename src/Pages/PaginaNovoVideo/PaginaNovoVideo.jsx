@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import Botao from '../../components/Botao/Botao';
 import EnviarNovoVideo from './EnviarNovoVideo';
 import { Link } from 'react-router-dom';
+import { Alert } from '@mui/material';
 
 export default function PaginaNovoVideo() {
   const [titulo, setTitulo] = useState('');
@@ -24,12 +25,23 @@ export default function PaginaNovoVideo() {
     descricao,
     codigo,
   ]);
+  const[alertaSucesso,setAlertaSucesso] = useState(false)
 
   const submitEnviarNovoVideo = (event) => {
     event.preventDefault();
     alert(`Video adicionado com sucesso !`);
     EnviarNovoVideo(titulo,video,imagem,categoria,descricao)
-    limparDados()
+    setTitulo('');
+    setCodigoVideo('')
+    setVideo('');
+    setImagem('');
+    setCategoria('');
+    setDescricao('');
+    setCodigo('');
+    setAlertaSucesso(true)
+    setTimeout(function() {
+      setAlertaSucesso(false);
+    }, 5000);
   };
 
   useEffect(() => {
@@ -107,6 +119,9 @@ export default function PaginaNovoVideo() {
             <Botao label="Salvar" type="submit" />
         </div>
       </form>
+      <Alert variant="outlined" severity="success" style={{display: alertaSucesso ? "flex" : "none"}}>
+        Vídeo adicionado com sucesso
+      </Alert>
     </section>
   );
 }

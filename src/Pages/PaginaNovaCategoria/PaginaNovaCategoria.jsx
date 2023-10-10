@@ -12,6 +12,8 @@ export default function PaginaNovaCategoria () {
     const [cor, setCor] = useState()
     const [dados, setDados] = useState([nome,descricao,cor])
 
+    const[alertaSucesso,setAlertaSucesso] = useState(false)
+
     useEffect(() => {
       setDados([nome,descricao,cor])
     })
@@ -25,17 +27,23 @@ export default function PaginaNovaCategoria () {
         }
     }
 
-    const handleSubmit = (event) => {
+    const aoEnviar = (event) => {
       event.preventDefault();
       EnviarNovaCategoria(nome,descricao,cor)
-      alert(`Categoria ${nome} cadastrada com sucesso !`)
+      setNome("")
+      setDescricao("")
+      setCor("")
+      setAlertaSucesso(true)
+      setTimeout(function() {
+        setAlertaSucesso(false);
+      }, 5000);
     };
 
   return (
     <section className={styles.formulario}>
       <h1 className={styles.titulo}>Nova Categoria</h1>
 
-      <form className={styles.container} onSubmit={handleSubmit}>
+      <form className={styles.container} onSubmit={aoEnviar}>
 
         <InputForm
          id="nome"
@@ -77,7 +85,11 @@ export default function PaginaNovaCategoria () {
         </section>
         <p className={styles.preview__legenda}>Visualização em tempo real</p>
 
+        <Alert variant="outlined" severity="success" style={{display: alertaSucesso ? "flex" : "none"}}>
+        Categoria adicionada com sucesso
+      </Alert>
 
     </section>
+    
   )
 }
