@@ -7,6 +7,7 @@ import Player from './Pages/Player/Player';
 import PaginaNovaCategoria from './Pages/PaginaNovaCategoria/PaginaNovaCategoria';
 import PaginaFavoritos from './Pages/PaginaFavoritos/PaginaFavoritos';
 import FavoritosProvider from './context/FavoritadosContext';
+import PainelDeControle from './Pages/PainelDeControle/PainelDeControle';
 
 
 function AppRoutes() {
@@ -20,6 +21,7 @@ function AppRoutes() {
             <Route path="novovideo" element={<PaginaNovoVideo />} />
             <Route path="novaCategoria" element={<PaginaNovaCategoria />} />
             <Route path="favoritos" element={<PaginaFavoritos />} />
+            <Route path="controle" element={<PainelDeControle />} />
             <Route path="/:id" element={<Player />}></Route>
           </Route>
         </Routes>

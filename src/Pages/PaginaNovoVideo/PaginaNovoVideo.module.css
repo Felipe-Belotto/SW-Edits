@@ -27,6 +27,7 @@
 
 .botoes__container {
   width: 100%;
+  height: 54px;
   display: flex;
   justify-content: space-between;
   gap: 32px;

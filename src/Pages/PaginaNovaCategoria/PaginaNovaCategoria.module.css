@@ -27,8 +27,8 @@
 
 .botoesContainer {
   display: flex;
+  height: 54px;
   justify-content: space-between;
-  gap: 32px;
 }
 
 .preview__container {

@@ -1,13 +1,12 @@
-import styles from './PaginaInicial.module.css';
+import styles from './PainelDeControle.module.css';
 import { useEffect, useState } from 'react';
-import Card from '../../components/Card/Card';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import CardADM from '../../components/CardADM/CardADM';
 
-export default function PaginaInicial() {
+export default function PainelDeControle() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
-  const [imagemCapaIndex, setImagemCapaIndex] = useState(0);
   const [quantidadeSlides, setQuantidadeSlides] = useState("")
   const [slideCentralizado, setslideCentralizado] = useState("")
 
@@ -41,14 +40,6 @@ export default function PaginaInicial() {
       });
   }, []);
 
-  useEffect(() => {
-    const intervaloID = setInterval(() => {
-      setImagemCapaIndex((index) => (index + 1) % imagensCapa.length);
-    }, 5000);
-
-    return () => clearInterval(intervaloID);
-  }, []);
-
   const larguraTela = window.innerWidth;
 
   useEffect(() => {
@@ -63,23 +54,10 @@ export default function PaginaInicial() {
     }
   }, [larguraTela]);
 
-  const imagensCapa = [
-    "https://media.tenor.com/jWGYirKr9TAAAAAC/luke-skywalker.gif",
-    "https://media.tenor.com/mU8MpZmeQgYAAAAC/star-wars-rogue-one.gif",
-    "https://media4.giphy.com/media/FHWLCr4nIJyOMar5eh/giphy.gif?cid=ecf05e47ca2f92c95i1xca6ut57ofruzrki00th9oqiyg6li&ep=v1_gifs_related&rid=giphy.gif&ct=g",
-    "https://media1.giphy.com/media/5H9mE4GpY9UwTsIAXy/giphy.gif",
-    "https://j.gifs.com/98W0lz@facebook.gif",
-  ];
-
   return (
     <>
     <section className={styles.sectionVideos}>
       
-      <div className={styles.banner}>
-        <img src={imagensCapa[imagemCapaIndex]} className={styles.capa} />
-      </div>
-     
-
       {categorias.map((categoria, index) => (
         <section style={{ backgroundColor: categoria.corDeFundo}}>
           <div className={styles.categoria__info}>
@@ -96,7 +74,7 @@ export default function PaginaInicial() {
           {videos
   .filter((video) => video.categoria === categoria.nome)
   .map((video) => (
-    <SwiperSlide className={styles.slide__card}>  <Card key={video.id} {...video} /></SwiperSlide>
+    <SwiperSlide className={styles.slide__card}>  <CardADM key={video.id} {...video} /></SwiperSlide>
   ))}
           </Swiper>
 

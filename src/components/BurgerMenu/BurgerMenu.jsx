@@ -53,6 +53,7 @@ export default function BurgerMenu(props) {
               <h1 className={styles.titulo}>Opções ADM</h1> } 
               conteudo={
               <div className={styles.botoesADM}>
+              <BotaoLink label="Controle" link="/controle"  />
               <BotaoLink label="Novo vídeo" link="/novovideo"  />
               <BotaoLink label="Nova categoria" link="/novacategoria" />
               </div>}

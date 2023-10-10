@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import styles from './Card.module.css';
+import Botao from '../Botao/Botao';
 
 export default function Card(props) {
   const [hoverAtivo, setHoverAtivo] = useState(false);
@@ -14,7 +15,7 @@ export default function Card(props) {
   };
 
   return (
-    <Link to={`/${props.id}`} className={styles.card}>
+    <>    <Link to={`/${props.id}`} className={styles.card}>
       <div
         className={styles.container}
         onMouseOver={aoPassarOMouse}
@@ -28,5 +29,7 @@ export default function Card(props) {
         )}
       </div>
     </Link>
+    
+    </>
   );
 }
