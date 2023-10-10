@@ -72,11 +72,9 @@
 
   .categoria__nome {
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: #f8f8f8;
     font-size: 24px;
-    margin: 8px 0 0 0;
+    margin: 8px 0 0 28px;
   }
 
   .categoria__descricao {
