@@ -60,7 +60,7 @@ export default function PaginaInicial() {
       setslideCentralizado(false)
     } else {
       setQuantidadeSlides(1.5);
-      setslideCentralizado(false)
+      setslideCentralizado(true)
     }
   }, [larguraTela]);
 
