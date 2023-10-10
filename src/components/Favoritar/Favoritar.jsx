@@ -34,7 +34,7 @@ export default function Favoritar(props) {
   const botaoFavoritado = {
     display: "flex",
     gap: "16px",
-    backgroundColor: "rgba(223, 161, 81, 0.775)",
+    backgroundColor: "rgba(196, 156, 105, 0.266)",
     color: "orange",
     textTransform: "none",
     borderRadius: "16px",
