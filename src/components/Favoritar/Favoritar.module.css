@@ -1,0 +1,15 @@
+.sectionFavorito {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.botaoLabel {
+  width: 50px;
+}
+
+.iconeFavoritar {
+  width: 32px;
+  height: 32px;
+}

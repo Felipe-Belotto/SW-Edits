@@ -5,6 +5,10 @@ import GradeIcon from '@mui/icons-material/Grade';
 import { useContext, useEffect, useState } from 'react';
 import { FavoritosContext } from '../../context/FavoritadosContext';
 import { Link } from 'react-router-dom';
+import { Label } from '@mui/icons-material';
+import C3POColorido from './iconeC3POcolorido.svg'
+import C3POSemCor from './iconeC3PO.svg'
+
 
 export default function Favoritar(props) {
   const { listaFavoritos, setListaFavoritos, adicionarVideo } = useContext(FavoritosContext);
@@ -21,22 +25,24 @@ export default function Favoritar(props) {
   const botaoFavoritar = {
     display: "flex",
     gap: "16px",
-    backgroundColor: "rgba(86, 86, 86, 0.26)",
+    backgroundColor: "rgba(48, 48, 48, 0.309)",
     color: "white",
+    borderRadius: "16px",
     textTransform: "none"
   };
 
   const botaoFavoritado = {
     display: "flex",
     gap: "16px",
-    backgroundColor: "rgba(122, 122, 122, 0.26)",
+    backgroundColor: "rgba(223, 161, 81, 0.775)",
     color: "orange",
-    textTransform: "none"
+    textTransform: "none",
+    borderRadius: "16px",
   };
 
 
-const iconeFavoritar = <StarOutlineIcon />;
-const iconeFavoritado = <GradeIcon />;
+const iconeFavoritar = <img src={C3POSemCor} className={styles.iconeFavoritar}/>
+const iconeFavoritado = <img src={C3POColorido} className={styles.iconeFavoritar}/>
 
 
   const aoClicar = () => {
@@ -56,11 +62,14 @@ const iconeFavoritado = <GradeIcon />;
   }
   
   return (
-    <>    
-    <Button onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}>
+
+    <section id={styles.sectionFavorito}>
+    <Button id="btnFavoritar" onClick={aoClicar} style={estadoFavorito ? botaoFavoritado : botaoFavoritar}> 
+    <label className={styles.botaoLabel}>{estadoFavorito ? "Favorito!" : "Favoritar"}</label>
     {estadoFavorito ? iconeFavoritado : iconeFavoritar}
     </Button>
-    </>
+    </section>
+
 
   );
 }
