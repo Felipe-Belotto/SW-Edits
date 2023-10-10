@@ -1,5 +1,7 @@
 .categorias_botoes {
   display: flex;
+  gap: 8px;
+  padding: 0 16px;
 }
 
 .icone {
