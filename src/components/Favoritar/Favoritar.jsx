@@ -27,7 +27,7 @@ export default function Favoritar(props) {
     gap: "16px",
     backgroundColor: "rgba(48, 48, 48, 0.309)",
     color: "white",
-    borderRadius: "16px",
+    borderRadius: "8px",
     textTransform: "none"
   };
 
@@ -37,7 +37,7 @@ export default function Favoritar(props) {
     backgroundColor: "rgba(196, 156, 105, 0.266)",
     color: "orange",
     textTransform: "none",
-    borderRadius: "16px",
+    borderRadius: "8px",
   };
 
 
