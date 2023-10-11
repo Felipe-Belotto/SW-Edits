@@ -41,7 +41,7 @@ export default function PainelDeControle() {
   return (
     <>
       <section className={styles.section__categorias}>
-        <h1 className={styles.sectionTitulo}>Categorias</h1>
+        <h1 className={styles.section__titulo}>Categorias</h1>
         {categorias.map((categoria, index) => (
           <section
             key={index}
@@ -55,8 +55,8 @@ export default function PainelDeControle() {
         ))}
       </section>
 
-      <section className={styles.sectionVideos}>
-        <h1 className={styles.sectionTitulo}>Vídeos</h1>
+      <section className={styles.section__videos}>
+        <h1 className={styles.section__titulo}>Vídeos</h1>
         {categorias.map((categoria) => (
           <section
             style={{ backgroundColor: categoria.corDeFundo }}
