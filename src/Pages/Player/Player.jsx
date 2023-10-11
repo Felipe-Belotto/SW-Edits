@@ -71,7 +71,7 @@ export default function Player() {
 
   useEffect(() => {
     if (larguraTela > 768) {
-      setQuantidadeSlides(6);
+      setQuantidadeSlides(4);
       setSlideCentralizado(false);
     } else {
       setQuantidadeSlides(1.5);
