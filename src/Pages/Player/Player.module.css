@@ -55,7 +55,7 @@
   flex-direction: column;
   gap: 10px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: start;
 }
 
 .spanDescricao {
