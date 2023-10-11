@@ -11,7 +11,7 @@ export default function PaginaInicial() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
   const [quantidadeSlides, setQuantidadeSlides] = useState('');
-  const [slideCentralizado, setslideCentralizado] = useState('');
+  const [slideCentralizado, setSlideCentralizado] = useState('');
 
   useEffect(() => {
     apiVideos()
@@ -30,10 +30,10 @@ export default function PaginaInicial() {
   useEffect(() => {
     if (larguraTela > 768) {
       setQuantidadeSlides(6);
-      setslideCentralizado(false);
+      setSlideCentralizado(false);
     } else {
       setQuantidadeSlides(1.5);
-      setslideCentralizado(false);
+      setSlideCentralizado(false);
     }
   }, [larguraTela]);
 
@@ -62,7 +62,6 @@ export default function PaginaInicial() {
               .filter((video) => video.categoria === categoria.nome)
               .map((video) => (
                 <SwiperSlide className={styles.slide__card}>
-                  {' '}
                   <Card key={video.id} {...video} />
                 </SwiperSlide>
               ))}

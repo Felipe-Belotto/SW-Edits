@@ -77,6 +77,11 @@
   font-style: italic;
 }
 
+.slider {
+  width: 100%;
+  display: flex;
+}
+
 @media screen and (max-width:768px) {
   .iframeContainer {
     width: 100%;
