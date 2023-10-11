@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 1;
-  background-color: rgba(14, 14, 14, 0.697);
+  background-color: #787878;
   color: #FFF;
   text-align: center;
   border: 1px solid white;
@@ -18,7 +18,7 @@
 }
 
 .botao:hover {
-  background-color: #28282896;
+  background-color: #101010ad;
 }
 
 @media screen and (max-width: 1000px) {

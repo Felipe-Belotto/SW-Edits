@@ -3,7 +3,6 @@ import styles from './BurgerMenu.module.css';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import BotaoLink from '../BotaoLink/BotaoLink';
-import iconeR2D2 from './iconeR2D2.svg';
 import BotaoVerMais from '../BotaoVerMais/BotaoVerMais';
 
 export default function BurgerMenu(props) {
@@ -48,7 +47,7 @@ export default function BurgerMenu(props) {
           <BotaoLink label={'Favoritos'} link="/favoritos" />
           <div className={styles.adm}>
             <BotaoVerMais
-              label={<h1 className={styles.titulo}>Opções ADM</h1>}
+              label={<h1 className={styles.tituloVerMais}>Opções ADM</h1>}
               conteudo={
                 <div className={styles.botoesADM}>
                   <BotaoLink label="Painel de controle" link="/controle" />

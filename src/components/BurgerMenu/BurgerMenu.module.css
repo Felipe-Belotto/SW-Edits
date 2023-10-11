@@ -13,7 +13,7 @@
   top: 100%;
   right: 0%;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.738);
+  background-color: #e7e7e7;
   border: 2px solid rgb(55, 55, 55);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 100;
@@ -30,10 +30,19 @@
 
 .titulo {
   padding: 8px 0;
-  background-color: rgba(20, 20, 20, 0.715);
+  background-color: #406fb3;
   width: calc(100% - 4px);
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgb(33, 33, 33);
+}
+
+.tituloVerMais{
+  padding: 2px 0;
+  font-size: 16px;
+  background-color: #406fb3;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgb(33, 33, 33);
 }
