@@ -4,14 +4,15 @@
 }
 
 .banner {
-  height: 400px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(7, 7, 7, 0.824);
+  background-color: #650a0356;
 }
 
 .capa {
-  height: 100%;
+  width: auto;
+  height: 50%;
 }
 
 .categoriaContainer {
@@ -32,7 +33,7 @@
   color: #f8f8f8;
   font-size: 32px;
   padding: 8px;
-  margin: 8px 0 0 28px;
+  margin: 16px 0 0 28px;
 }
 
 .categoria__videos {
@@ -74,7 +75,7 @@
     display: flex;
     color: #f8f8f8;
     font-size: 24px;
-    margin: 8px 0 0 28px;
+    margin: 16px 0 0 28px;
   }
 
   .categoria__descricao {
