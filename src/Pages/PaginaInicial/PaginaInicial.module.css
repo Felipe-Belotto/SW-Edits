@@ -18,10 +18,6 @@
   border: 4px solid rgba(255, 255, 255, 0.808);
 }
 
-.capa:hover {
-  border: 4px solid rgba(215, 215, 215, 0.808); 
-}
-
 .categoriaContainer {
   display: flex;
   flex-direction: column;
