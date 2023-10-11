@@ -26,13 +26,15 @@ export default function PaginaInicial() {
   }, []);
 
   const larguraTela = window.innerWidth;
-
   useEffect(() => {
-    if (larguraTela > 768) {
-      setQuantidadeSlides(6);
+    if (larguraTela < 950) {
+      setQuantidadeSlides(1.8);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 1550) {
+      setQuantidadeSlides(3);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(1.5);
+      setQuantidadeSlides(5);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);
