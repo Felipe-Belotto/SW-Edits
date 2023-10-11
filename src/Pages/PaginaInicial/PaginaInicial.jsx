@@ -38,7 +38,7 @@ export default function PaginaInicial() {
   }, [larguraTela]);
 
   const imagemCapa =
-    'https://w0.peakpx.com/wallpaper/842/543/HD-wallpaper-darth-vader-rogue-one-star-wars-darth-vader-star-wars-movies-artstation.jpg';
+    'https://images4.alphacoders.com/122/thumbbig-1221834.webp';
 
   return (
     <section className={styles.sectionVideos}>
