@@ -5,7 +5,7 @@
 .menu {
   position: absolute;
   display: flex;
-  gap: 16px;
+  gap: 8px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@
 .botoesADM {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 @media screen and (max-width: 768px) {
