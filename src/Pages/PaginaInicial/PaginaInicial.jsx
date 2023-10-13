@@ -58,9 +58,21 @@ export default function PaginaInicial() {
       </div>
 
       {categorias.map((categoria, index) => (
-        <section style={{ backgroundColor: categoria.corDeFundo }}>
+        <section>
           <div className={styles.categoria__info}>
-            <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
+            <h1 className={styles.categoria__nome}>
+              <span
+                style={{
+                  border: `1px solid ${categoria.corDeFundo} `,
+                  padding: '8px',
+                  borderRadius: '8px',
+                  boxShadow: `0 0 10px ${categoria.corDeFundo}, 0 0 20px ${categoria.corDeFundo}`,
+                  color: categoria.corDeFundo,
+                }}
+              >
+                {categoria.nome}
+              </span>{' '}
+            </h1>
           </div>
 
           <Swiper

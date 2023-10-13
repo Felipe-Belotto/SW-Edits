@@ -10,7 +10,7 @@ export default async function apiCategorias(callback) {
     if (callback && typeof callback === 'function') {
       const categoriasAtualizadas = dados.map((categoria) => ({
         ...categoria,
-        corDeFundo: ajustarOpacidade(categoria.cor, 0.9, 0.7),
+        corDeFundo: categoria.cor,
       }));
 
       callback(categoriasAtualizadas);
