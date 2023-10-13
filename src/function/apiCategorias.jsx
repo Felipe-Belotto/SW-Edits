@@ -1,15 +1,16 @@
-import { ajustarOpacidade } from "./ajustarOpacidade";
-
+import { ajustarOpacidade } from './ajustarOpacidade';
 
 export default async function apiCategorias(callback) {
   try {
-    const resposta = await fetch('https://6516db6809e3260018ca679b.mockapi.io/Categorias');
+    const resposta = await fetch(
+      'https://6516db6809e3260018ca679b.mockapi.io/Categorias',
+    );
     const dados = await resposta.json();
 
     if (callback && typeof callback === 'function') {
       const categoriasAtualizadas = dados.map((categoria) => ({
         ...categoria,
-        corDeFundo: ajustarOpacidade(categoria.cor, 0.8, 0.4),
+        corDeFundo: ajustarOpacidade(categoria.cor, 0.95, 0.7),
       }));
 
       callback(categoriasAtualizadas);
