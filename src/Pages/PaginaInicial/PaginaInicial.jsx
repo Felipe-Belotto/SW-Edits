@@ -27,7 +27,7 @@ export default function PaginaInicial() {
 
   const larguraTela = window.innerWidth;
   useEffect(() => {
-    if (larguraTela < 400) {
+    if (larguraTela < 380) {
       setQuantidadeSlides(1.8);
       setSlideCentralizado(false);
     } else if (larguraTela <= 767) {
@@ -64,6 +64,7 @@ export default function PaginaInicial() {
               <span
                 style={{
                   border: `1px solid ${categoria.corDeFundo} `,
+                  padding: '8px',
                   borderRadius: '8px',
                   boxShadow: `0 0 10px ${categoria.corDeFundo}, 0 0 20px ${categoria.corDeFundo}`,
                   color: categoria.corDeFundo,

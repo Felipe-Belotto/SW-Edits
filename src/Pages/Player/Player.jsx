@@ -71,7 +71,7 @@ export default function Player() {
       setQuantidadeSlides(1.8);
       setSlideCentralizado(false);
     } else if (larguraTela <= 767) {
-      setQuantidadeSlides(2);
+      setQuantidadeSlides(2.2);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1200) {
       setQuantidadeSlides(2.5);
