@@ -27,14 +27,23 @@ export default function PaginaInicial() {
 
   const larguraTela = window.innerWidth;
   useEffect(() => {
-    if (larguraTela < 950) {
+    if (larguraTela < 400) {
       setQuantidadeSlides(1.8);
       setSlideCentralizado(false);
+    } else if (larguraTela <= 767) {
+      setQuantidadeSlides(2);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 1200) {
+      setQuantidadeSlides(2.5);
+      setSlideCentralizado(false);
     } else if (larguraTela <= 1550) {
-      setQuantidadeSlides(3);
+      setQuantidadeSlides(4);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 1920) {
+      setQuantidadeSlides(5);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(5);
+      setQuantidadeSlides(8);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);
