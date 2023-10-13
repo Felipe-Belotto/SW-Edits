@@ -8,8 +8,8 @@
 .iframeContainer {
   display: flex;
   align-self: center;
-  width: 80%;
-  height: 100vh;
+  width: 60%;
+  height: 80vh;
 }
 
 .dadosContainer {
@@ -68,10 +68,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 10%;
+  padding: 40px 0;
 }
 
 .relacionados__titulo {
+  padding: 0 0 0 10%;
   color: #f8f8f8;
   font-size: 28px;
   font-style: italic;

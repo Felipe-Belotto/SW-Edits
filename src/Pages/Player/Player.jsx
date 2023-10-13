@@ -11,7 +11,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Player() {
   const [videos, setVideos] = useState([]);
   const [video, setVideo] = useState(null);
-  const [categorias, setCategorias] = useState([]);
+  const [categoria, setCategoria] = useState([]);
   const [corCategoriaAtual, setCorCategoriaAtual] = useState([]);
   const [videosRelacionados, setVideosRelacionados] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -40,16 +40,14 @@ export default function Player() {
         'https://6516db6809e3260018ca679b.mockapi.io/Categorias',
       );
       const dadosCategorias = await respostaCategorias.json();
-      setCategorias(dadosCategorias);
+      setCategoria(dadosCategorias);
 
       const categoriaEncontrada = dadosCategorias.find(
         (categoria) => categoria.nome === dadosVideo.categoria,
       );
 
       if (categoriaEncontrada) {
-        setCorCategoriaAtual(
-          ajustarOpacidade(categoriaEncontrada.cor, 0.8, 0.4),
-        );
+        setCorCategoriaAtual(categoriaEncontrada.cor);
       }
 
       setVideosRelacionados(
@@ -68,13 +66,24 @@ export default function Player() {
   };
 
   const larguraTela = window.innerWidth;
-
   useEffect(() => {
-    if (larguraTela > 768) {
+    if (larguraTela < 400) {
+      setQuantidadeSlides(1.8);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 767) {
+      setQuantidadeSlides(2);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 1200) {
+      setQuantidadeSlides(2.5);
+      setSlideCentralizado(false);
+    } else if (larguraTela <= 1550) {
       setQuantidadeSlides(4);
       setSlideCentralizado(false);
+    } else if (larguraTela <= 1920) {
+      setQuantidadeSlides(5);
+      setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(1.5);
+      setQuantidadeSlides(8);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);
@@ -103,7 +112,9 @@ export default function Player() {
 
       <div
         className={styles.dadosContainer}
-        style={{ backgroundColor: corCategoriaAtual }}
+        style={{
+          backgroundColor: ajustarOpacidade(corCategoriaAtual, 0.8, 0.4),
+        }}
       >
         <Favoritar dados={video} id={video.id} />
         <h1 className={styles.titulo}>
@@ -114,8 +125,14 @@ export default function Player() {
           </span>
         </h1>
         <p className={styles.descricao}>
-          <span className={styles.spanCategoria}>Categoria: </span>{' '}
-          <span>{video.categoria}</span>
+          <span className={styles.spanCategoria}>Categoria: </span>
+          <span
+            style={{
+              color: corCategoriaAtual,
+            }}
+          >
+            {video.categoria}
+          </span>
           <span className={styles.spanDescricao}>Descrição: </span>
           {video.descricao}
         </p>

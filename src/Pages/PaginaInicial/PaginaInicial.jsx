@@ -64,14 +64,13 @@ export default function PaginaInicial() {
               <span
                 style={{
                   border: `1px solid ${categoria.corDeFundo} `,
-                  padding: '8px',
                   borderRadius: '8px',
                   boxShadow: `0 0 10px ${categoria.corDeFundo}, 0 0 20px ${categoria.corDeFundo}`,
                   color: categoria.corDeFundo,
                 }}
               >
                 {categoria.nome}
-              </span>{' '}
+              </span>
             </h1>
           </div>
 
