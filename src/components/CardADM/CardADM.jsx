@@ -60,12 +60,12 @@ export default function CardADM(props) {
         >
           <Botao
             onClick={aoExcluir}
-            corFundo="rgba(153, 0, 0, 0.8)"
+            corFundo="rgba(153, 0, 0, 0.9)"
             label={<img src={iconeExcluir} className={styles.icone} />}
           />
           <Botao
             onClick={aoAlterar}
-            corFundo="rgba(176, 114, 0, 0.8)"
+            corFundo="rgba(176, 114, 0, 0.9)"
             label={<img src={iconeAlterar} className={styles.icone} />}
           />
         </div>

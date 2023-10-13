@@ -11,12 +11,12 @@ export default function CategoriaBotoes() {
     <div className={styles.categorias_botoes}>
       <Botao
         onClick={aoExcluir}
-        corFundo="rgba(153, 0, 0, 0.5)"
+        corFundo="rgba(153, 0, 0, 1)"
         label={<img src={iconeExcluir} className={styles.icone} />}
       />
       <Botao
         onClick={aoAlterar}
-        corFundo="rgba(176, 114, 0, 0.568)"
+        corFundo="rgba(176, 114, 0, 1)"
         label={<img src={iconeAlterar} className={styles.icone} />}
       />
     </div>

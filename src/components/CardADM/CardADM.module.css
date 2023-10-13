@@ -74,8 +74,10 @@
   }
 
   .botoesADM {
+    width: 80%;
     position: relative;
     bottom: 50px;
+    right: 0px;
     display: flex;
     justify-content: end;
     align-items: center;
