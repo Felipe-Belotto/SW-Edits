@@ -67,11 +67,11 @@ export default function Player() {
 
   const larguraTela = window.innerWidth;
   useEffect(() => {
-    if (larguraTela < 400) {
+    if (larguraTela < 380) {
       setQuantidadeSlides(1.8);
       setSlideCentralizado(false);
     } else if (larguraTela <= 767) {
-      setQuantidadeSlides(2.2);
+      setQuantidadeSlides(2);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1200) {
       setQuantidadeSlides(2.5);
