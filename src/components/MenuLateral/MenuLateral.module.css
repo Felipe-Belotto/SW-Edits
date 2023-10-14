@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: start;
   padding: 30px 0;
   gap: 32px;
   background-color: rgb(12, 12, 12);
@@ -28,6 +29,37 @@
   background-color: transparent;
   border: none;
 }
+
+.div__main{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.div__footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.div__contatos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contato__icone{
+  font-size: 32px;
+}
+
+
 
 @media screen and (max-width: 1444px) {
   .nav{
