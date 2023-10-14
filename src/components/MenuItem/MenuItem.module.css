@@ -1,0 +1,25 @@
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.231);
+  border-radius: 8px;
+  margin: 0 1px;
+  cursor: pointer;
+}
+
+.label{ 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  padding: 0 0 0 4px;
+  font-size: 18px
+}

@@ -8,25 +8,26 @@ import PaginaNovaCategoria from './Pages/PaginaNovaCategoria/PaginaNovaCategoria
 import PaginaFavoritos from './Pages/PaginaFavoritos/PaginaFavoritos';
 import FavoritosProvider from './context/FavoritadosContext';
 import PainelDeControle from './Pages/PainelDeControle/PainelDeControle';
-
+import { MenuProvider } from './context/MenuContext';
 
 function AppRoutes() {
-
   return (
+    <MenuProvider>
       <FavoritosProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<PaginaBase />}>
-            <Route index element={<PaginaInicial />} />
-            <Route path="novovideo" element={<PaginaNovoVideo />} />
-            <Route path="novaCategoria" element={<PaginaNovaCategoria />} />
-            <Route path="favoritos" element={<PaginaFavoritos />} />
-            <Route path="controle" element={<PainelDeControle />} />
-            <Route path="/:id" element={<Player />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<PaginaBase />}>
+              <Route index element={<PaginaInicial />} />
+              <Route path="novovideo" element={<PaginaNovoVideo />} />
+              <Route path="novaCategoria" element={<PaginaNovaCategoria />} />
+              <Route path="favoritos" element={<PaginaFavoritos />} />
+              <Route path="controle" element={<PainelDeControle />} />
+              <Route path="/:id" element={<Player />}></Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </FavoritosProvider>
+    </MenuProvider>
   );
 }
 

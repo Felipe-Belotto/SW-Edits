@@ -33,9 +33,9 @@
 
 .categoria__nome {
   color: #f8f8f8;
-  font-size: 32px;
+  font-size: 24px;
   padding: 8px;
-  margin: 16px 0 0 28px;
+  margin: 16px 0 0 12px;
 }
 
 .categoria__videos {
@@ -76,8 +76,8 @@
   .categoria__nome {
     display: flex;
     color: #f8f8f8;
-    font-size: 24px;
-    margin: 16px 0 0 28px;
+    font-size: 16px;
+    margin: 16px 0 0 8px;
   }
 
   .categoria__descricao {

@@ -2,66 +2,7 @@
   position: relative;
 }
 
-.menu {
-  position: absolute;
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  top: 100%;
-  right: 0%;
-  border-radius: 8px;
-  background-color: #ffffffd7;
-  border: 2px solid rgb(55, 55, 55);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-  padding: 20px;
-}
-
-.adm {
-  display: FLEX;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.titulo {
-  padding: 8px 0;
-  background-color: #406fb3;
-  width: calc(100% - 4px);
-  font-size: 16px;
-  text-align: center;
-  border-radius: 4px;
-  border: 1px solid rgb(33, 33, 33);
-}
-
-.tituloVerMais{
-  padding: 2px 0;
-  font-size: 16px;
-  background-color: #406fb3;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid rgb(33, 33, 33);
-}
-
 .botao {
   background-color: transparent;
   border: none;
-}
-
-.botoesADM {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-@media screen and (max-width: 768px) {
-  .menu {
-    width: 90vw;
-    padding: 20px 0;
-    right: 0;
-  }
 }

@@ -2,8 +2,9 @@
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
+  justify-content: start;
+  gap: 8px;
+  padding: 0 16px;
   background-color: #0e0e0e;
 }
 
@@ -11,29 +12,14 @@
   display: flex;
   align-items: center;
   height: auto;
-  width: 200px;
+  width: 40%;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .logo:hover {
   filter: opacity(90%);
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.navItem {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.navItem:hover {
-  text-decoration: underline;
-}
-
 @media screen and (max-width: 768px) {
   .container {
     gap: 16px;

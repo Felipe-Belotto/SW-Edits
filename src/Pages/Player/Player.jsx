@@ -97,7 +97,10 @@ export default function Player() {
   }
 
   return (
-    <section className={styles.playerContainer}>
+    <section
+      className={styles.playerContainer}
+      style={{ backgroundColor: ajustarOpacidade(corCategoriaAtual, 0.8, 0.4) }}
+    >
       <div className={styles.iframeContainer}>
         <iframe
           width="100%"
