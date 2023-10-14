@@ -59,10 +59,12 @@
   font-size: 32px;
 }
 
-
-
 @media screen and (max-width: 1444px) {
   .nav{
     width: 100%;
+  }
+
+  .botao{
+    display: none;
   }
 }
