@@ -23,6 +23,12 @@
   gap: 8px;
 }
 
+.botao{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
 @media screen and (max-width: 1444px) {
   .nav{
     width: 100%;

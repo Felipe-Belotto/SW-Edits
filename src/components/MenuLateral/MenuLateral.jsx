@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import MenuItem from '../MenuItem/MenuItem';
 import styles from './MenuLateral.module.css';
+import { MenuContext } from '../../context/MenuContext';
 
 export default function MenuLateral(props) {
+  const [menuAtivo, setMenuAtivo] = useContext(MenuContext);
+
   return (
     <section
       className={styles.section__menu}
@@ -12,12 +16,12 @@ export default function MenuLateral(props) {
           <MenuItem
             label="Inicio"
             to="/"
-            img={<i class="fa-solid fa-house"></i>}
+            img={<i className="fa-solid fa-house"></i>}
           />
           <MenuItem
             label="Favoritos"
             to="/favoritos"
-            img={<i class="fa-solid fa-heart"></i>}
+            img={<i className="fa-solid fa-heart"></i>}
           />
         </section>
 
@@ -25,12 +29,12 @@ export default function MenuLateral(props) {
           <MenuItem
             label="Add categoria"
             to="/novacategoria"
-            img={<i class="fa-solid fa-list"></i>}
+            img={<i className="fa-solid fa-list"></i>}
           />
           <MenuItem
             label="Add video"
             to="/novovideo"
-            img={<i class="fa-solid fa-video"></i>}
+            img={<i className="fa-solid fa-video"></i>}
           />
         </section>
 
@@ -38,10 +42,16 @@ export default function MenuLateral(props) {
           <MenuItem
             label="Painel de controle"
             to="/controle"
-            img={<i class="fa-solid fa-computer"></i>}
+            img={<i className="fa-solid fa-computer"></i>}
           />
         </section>
       </nav>
+      <button
+        onClick={() => {
+          setMenuAtivo(!menuAtivo);
+        }}
+        className={styles.botao}
+      />
     </section>
   );
 }
