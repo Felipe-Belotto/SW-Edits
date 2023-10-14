@@ -24,7 +24,7 @@ export default function BurgerMenu(props) {
   return (
     <div className={styles.container}>
       <button onClick={aoClicar} className={styles.botao}>
-        <Hamburger size={30} />
+        <Hamburger size={30} toggle={menuAtivo} toggled={menuAtivo} />
       </button>
     </div>
   );
