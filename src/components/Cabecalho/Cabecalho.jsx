@@ -7,6 +7,7 @@ import BotaoLink from '../BotaoLink/BotaoLink';
 import MenuItem from '../MenuItem/MenuItem';
 import MenuLateral from '../MenuLateral/MenuLateral';
 import { MenuContext } from '../../context/MenuContext';
+import Usuario from '../Usuario/Usuario';
 
 export default function Cabecalho() {
   const location = useLocation();
@@ -43,14 +44,9 @@ export default function Cabecalho() {
               img={<i className="fa-solid fa-heart"></i>}
             />
           </section>
-
-          <section className={styles.section__usario}>
-            <p>Olá, Usuário</p>
-            <div className={styles.imagem__usuario}>
-              <i class="fa-solid fa-user"></i>
-            </div>
-          </section>
         </nav>
+
+        <Usuario />
       </header>
       <MenuLateral display={menuAtivo ? 'flex' : 'none'} />
     </>

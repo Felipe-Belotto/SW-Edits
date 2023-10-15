@@ -1,0 +1,49 @@
+.container {
+  width: auto;
+}
+
+.section__usario{
+  width: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.imagem__usuario{
+  margin: 0 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgb(40, 40, 40);
+}
+
+.nav {
+  width: 250px;
+  top: 0;
+  height: 250px;
+  justify-content: start;
+  flex-direction: column;
+  position: absolute;
+  right: 1px;
+  border: 1px solid rgb(28, 28, 28);
+}
+
+.usuario__container {
+  width: 100%;
+  min-height: 70px;
+}
+
+.nav__container{
+  width: 100%;
+  height: 100%;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
