@@ -1,6 +1,6 @@
 # SW Edits - Star Wars Edits
 
-[![Visite o site SW Edits](https://a.imagem.app/ozx7NE.png)](https://sw-edits.vercel.app/)
+[![Visite o site SW Edits](https://a.imagem.app/oYTUEW.png)](https://sw-edits.vercel.app/)
 Clique na miniatura para visitar o site
 
 ## Descrição
