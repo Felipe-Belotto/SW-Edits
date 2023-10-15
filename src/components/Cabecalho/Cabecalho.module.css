@@ -3,16 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 8px;
   padding: 0 16px;
+  gap: 32px;
   background-color: #0e0e0e;
+}
+
+.menu{
+  display: none;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  height: auto;
-  width: 40%;
+  height: 1.5em;
+  width: auto;
   flex-shrink: 0;
   cursor: pointer;
 }
@@ -20,9 +24,26 @@
 .logo:hover {
   filter: opacity(90%);
 }
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
+    width: 100%;
+    position: fixed;
     gap: 16px;
     padding: 0 16px;
+    z-index: 1000;
   }
+
+.menu{
+  display: flex;
+}
+
+.nav {
+  display: none;
+}
 }

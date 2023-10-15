@@ -1,0 +1,10 @@
+.titulo {
+  width: 100%;
+  padding: 10% 0;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(240, 255, 255, 0.208);
+}

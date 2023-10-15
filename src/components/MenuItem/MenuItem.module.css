@@ -9,9 +9,6 @@
 }
 
 .item:hover {
-  background-color: rgba(0, 0, 0, 0.231);
-  border-radius: 8px;
-  margin: 0 1px;
   cursor: pointer;
 }
 
@@ -21,7 +18,8 @@
   justify-content: start;
   width: 60%;
   padding: 0 0 0 4px;
-  font-size: 16px
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1440px) {

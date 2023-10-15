@@ -20,7 +20,6 @@ export default function PaginaBase() {
     <>
       <Cabecalho />
       <main className={styles.main}>
-        <MenuLateral display={menuAtivo ? 'flex' : 'none'} />
         <Outlet />
       </main>
       <Rodape />

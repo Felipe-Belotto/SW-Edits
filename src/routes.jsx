@@ -9,6 +9,7 @@ import PaginaFavoritos from './Pages/PaginaFavoritos/PaginaFavoritos';
 import FavoritosProvider from './context/FavoritadosContext';
 import PainelDeControle from './Pages/PainelDeControle/PainelDeControle';
 import { MenuProvider } from './context/MenuContext';
+import PaginaPesquisa from './Pages/PaginaPesquisa/PaginaPesquisa';
 
 function AppRoutes() {
   return (
@@ -20,6 +21,7 @@ function AppRoutes() {
               <Route index element={<PaginaInicial />} />
               <Route path="novovideo" element={<PaginaNovoVideo />} />
               <Route path="novaCategoria" element={<PaginaNovaCategoria />} />
+              <Route path="pesquisa" element={<PaginaPesquisa />} />
               <Route path="favoritos" element={<PaginaFavoritos />} />
               <Route path="controle" element={<PainelDeControle />} />
               <Route path="/:id" element={<Player />}></Route>
