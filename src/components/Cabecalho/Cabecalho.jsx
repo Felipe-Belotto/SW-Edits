@@ -26,21 +26,30 @@ export default function Cabecalho() {
         </Link>
 
         <nav className={styles.nav}>
-          <MenuItem
-            label="Inicio"
-            to="/"
-            img={<i className="fa-solid fa-house"></i>}
-          />
-          <MenuItem
-            label="Pesquisa"
-            to="/pesquisa"
-            img={<i class="fa-solid fa-magnifying-glass"></i>}
-          />
-          <MenuItem
-            label="Favoritos"
-            to="/favoritos"
-            img={<i className="fa-solid fa-heart"></i>}
-          />
+          <section className={styles.nav__itens}>
+            <MenuItem
+              label="Inicio"
+              to="/"
+              img={<i className="fa-solid fa-house"></i>}
+            />
+            <MenuItem
+              label="Pesquisa"
+              to="/pesquisa"
+              img={<i class="fa-solid fa-magnifying-glass"></i>}
+            />
+            <MenuItem
+              label="Favoritos"
+              to="/favoritos"
+              img={<i className="fa-solid fa-heart"></i>}
+            />
+          </section>
+
+          <section className={styles.section__usario}>
+            <p>Olá, Usuário</p>
+            <div className={styles.imagem__usuario}>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </section>
         </nav>
       </header>
       <MenuLateral display={menuAtivo ? 'flex' : 'none'} />
