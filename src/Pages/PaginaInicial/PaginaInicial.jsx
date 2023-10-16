@@ -40,7 +40,7 @@ export default function PaginaInicial() {
       setQuantidadeSlides(4);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1920) {
-      setQuantidadeSlides(5);
+      setQuantidadeSlides(6);
       setSlideCentralizado(false);
     } else {
       setQuantidadeSlides(8);
