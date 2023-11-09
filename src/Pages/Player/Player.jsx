@@ -66,6 +66,7 @@ export default function Player() {
   };
 
   const larguraTela = window.innerWidth;
+
   useEffect(() => {
     if (larguraTela < 380) {
       setQuantidadeSlides(1.8);
@@ -74,16 +75,16 @@ export default function Player() {
       setQuantidadeSlides(2);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1200) {
-      setQuantidadeSlides(2.5);
+      setQuantidadeSlides(2.6);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1550) {
-      setQuantidadeSlides(4);
+      setQuantidadeSlides(3.8);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1920) {
-      setQuantidadeSlides(5);
+      setQuantidadeSlides(5.2);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(8);
+      setQuantidadeSlides(7);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);
