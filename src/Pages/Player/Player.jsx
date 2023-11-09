@@ -116,7 +116,7 @@ export default function Player() {
       <div
         className={styles.dadosContainer}
         style={{
-          backgroundColor: ajustarOpacidade(corCategoriaAtual, 0.8, 0.4),
+          backgroundColor: ajustarOpacidade(corCategoriaAtual, 0.95, 0.4),
         }}
       >
         <Favoritar dados={video} id={video.id} />
