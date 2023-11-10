@@ -1,0 +1,394 @@
+[
+  {
+    "titulo": "Shin Hati",
+    "video": "https://www.youtube.com/embed/NKLl8od24oY?si=JiLB56vgcYJFlwVL",
+    "imagem": "https://img.youtube.com/vi/NKLl8od24oY/hqdefault.jpg",
+    "categoria": "Caçador de recompensas",
+    "descricao": "Aprendiz de Baylan Skoll que foi treinada para ser mais que os Jedis ou os Sith",
+    "id": "0"
+  },
+  {
+    "titulo": "Anakin Skywalker",
+    "video": "https://www.youtube.com/embed/pkb03Pt1l7c?si=T3Rx37GdIeEYdiGj",
+    "imagem": "https://img.youtube.com/vi/pkb03Pt1l7c/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "1"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/-IdHhSmyC-k?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/-IdHhSmyC-k/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "A trágica história de Obi Wan Kenobi",
+    "id": "2"
+  },
+  {
+    "titulo": "Luke Skywalker",
+    "video": "https://www.youtube.com/embed/VFr3w_-M5HY?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/VFr3w_-M5HY/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O herói destinado a grandes feitos na galáxia, é uma presença lendária. De um simples fazendeiro em Tatooine a um mestre Jedi, sua jornada é um épico de superação e autodescoberta. Luke personifica a esperança, coragem e a crença na redenção, destacando-se como um farol de resistência na luta contra as trevas do Império e da influência do lado sombrio da Força.",
+    "id": "3"
+  },
+  {
+    "titulo": "Darth Sidious",
+    "video": "https://www.youtube.com/embed/pZPMoaftwnc?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/pZPMoaftwnc/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": " Também conhecido como Imperador Palpatine, é um icônico vilão do universo Star Wars. Mestre Sith astuto e manipulador, ele teceu uma trama intricada para tomar o controle da galáxia. Sua aparência serena esconde uma natureza sinistra, enquanto seus poderes na Força o tornam um adversário formidável. Sidious é a personificação do lado sombrio, guiando a ascensão do Império Galáctico com maestria maquiavélica.",
+    "id": "4"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/Z7V29N0qCSI?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/Z7V29N0qCSI/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "5"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/BVs4W-SpjyE?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/BVs4W-SpjyE/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O venerado Mestre Jedi de Star Wars, é um guerreiro sábio e nobre, conhecido por sua habilidade excepcional com um sabre de luz e por ser um defensor incansável da justiça. Sua jornada heróica é marcada pela sabedoria, lealdade e uma inabalável devoção à Força.",
+    "id": "6"
+  },
+  {
+    "titulo": "Anakin Skywalker",
+    "video": "https://www.youtube.com/embed/AE1gfomOJa0?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/AE1gfomOJa0/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": " Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "7"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/10Wd7ZaLDhc?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/10Wd7ZaLDhc/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Set Fire To The Rain",
+    "id": "8"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/Ds5bR72gNzc?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/Ds5bR72gNzc/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "9"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/5FqNUFR1RtA?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/5FqNUFR1RtA/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "10"
+  },
+  {
+    "titulo": "Kylo Ren",
+    "video": "https://www.youtube.com/embed/lUn7OUDcocQ?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/lUn7OUDcocQ/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Nascido como Ben Solo, é um personagem cativante da saga \"Star Wars\". Como o filho de Leia Organa e Han Solo, ele é consumido pelo conflito interno entre a luz e a escuridão. Tornando-se um líder poderoso da Primeira Ordem, Kylo Ren é fascinado pela figura de Darth Vader, incorporando sua busca pela supremacia. Sua jornada tumultuada e sua complexidade emocional adicionam camadas intrigantes à narrativa, fazendo de Kylo Ren um elemento central e memorável na trama.",
+    "id": "11"
+  },
+  {
+    "titulo": "Cobb Vanth ",
+    "video": "https://www.youtube.com/embed/uHdgCRyvXVI?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/uHdgCRyvXVI/hqdefault.jpg",
+    "categoria": "Especial",
+    "descricao": " Um personagem intrigante que se destaca como o xerife improvisado de Mos Pelgo, no deserto de Tatooine. Sua notoriedade cresce ao adquirir uma armadura mandaloriana, outrora pertencente a Boba Fett. Com sua presença carismática e história única, Vanth adiciona profundidade ao universo de \"Star Wars\", proporcionando uma perspectiva envolvente e contribuindo significativamente para a trama da série.",
+    "id": "12"
+  },
+  {
+    "titulo": "Boba Fett",
+    "video": "https://www.youtube.com/embed/8y5H_wt-S8E?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/8y5H_wt-S8E/hqdefault.jpg",
+    "categoria": "Caçador de recompensas",
+    "descricao": "Um icônico caçador de recompensas no universo \"Star Wars\", é notável por sua presença misteriosa e habilidades formidáveis. Vestindo uma armadura mandaloriana distintiva, ele deixou uma marca duradoura na saga. Seu retorno em \"The Mandalorian\" ofereceu aos fãs uma reviravolta emocionante, destacando a resiliência e destreza desse personagem. Boba Fett continua a ser um elemento crucial na mitologia de \"Star Wars\", capturando a imaginação dos espectadores com sua aura de mistério e determinação inabalável.",
+    "id": "13"
+  },
+  {
+    "titulo": "Paz Vizsla",
+    "video": "https://www.youtube.com/embed/sRw8lC5GW9k?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/sRw8lC5GW9k/hqdefault.jpg",
+    "categoria": "Mandaloriano",
+    "descricao": "Um membro da espécie mandaloriana, é uma figura imponente no universo de \"Star Wars\". Destacando-se pela sua lealdade à tradição mandaloriana, Paz é reconhecido pela sua impressionante armadura e habilidades de combate excepcionais. Sua participação notável em \"The Mandalorian\" adiciona uma dimensão única à narrativa, revelando a diversidade e complexidade dos guerreiros mandalorianos. Paz Vizsla permanece como um símbolo de força e devoção à cultura mandaloriana, contribuindo para a rica tapeçaria de personagens no universo expandido de \"Star Wars\".",
+    "id": "14"
+  },
+  {
+    "titulo": "Din Djarin",
+    "video": "https://www.youtube.com/embed/C49kw-88Igc?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/C49kw-88Igc/hqdefault.jpg",
+    "categoria": "Mandaloriano",
+    "descricao": " um caçador de recompensas austero e habilidoso. Vestindo a distintiva armadura mandaloriana, Djarin segue um código de honra rigoroso. Sua jornada solitária revela as complexidades de sua lealdade à cultura mandaloriana, enquanto sua ligação afetiva com Grogu adiciona profundidade emocional à narrativa. Com seu caráter resiliente e atraente, Din Djarin se destaca como uma figura central e fascinante no universo de \"Star Wars\".",
+    "id": "15"
+  },
+  {
+    "titulo": "Ashoka Tano",
+    "video": "https://www.youtube.com/embed/R5XEJQB19i8?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/R5XEJQB19i8/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Uma Togruta de pele laranja e branca, é uma proeminente personagem no universo Star Wars. Inicialmente introduzida como aprendiz de Anakin Skywalker, ela se destaca por sua perícia no combate com sabres de luz e por desempenhar um papel crucial na série \"Star Wars: The Clone Wars\". Sua jornada é marcada por desafios, levando-a a questionar e eventualmente se distanciar da Ordem Jedi, evidenciando uma narrativa rica em desenvolvimento pessoal e coragem.",
+    "id": "16"
+  },
+  {
+    "titulo": "Padmé Amidala",
+    "video": "https://www.youtube.com/embed/Ivp6066Has8?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/Ivp6066Has8/hqdefault.jpg",
+    "categoria": "Especial",
+    "descricao": "Notável por sua elegância e força política. Como a Rainha de Naboo e, posteriormente, senadora, ela desempenha papéis vitais na trama, destacando-se por sua habilidade diplomática e dedicação à justiça. Interpretada por Natalie Portman, Padmé é conhecida por sua coragem diante das ameaças à paz galáctica, mas também por sua trágica história de amor com Anakin Skywalker, que culmina em eventos impactantes na saga.",
+    "id": "17"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/l8xN-zFoSJY?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/l8xN-zFoSJY/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "18"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/dq6tKxlcjpk?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/dq6tKxlcjpk/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "19"
+  },
+  {
+    "titulo": "Ashoka Tano",
+    "video": "https://www.youtube.com/embed/DaKtiWY2pLM?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/DaKtiWY2pLM/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Uma Togruta de pele laranja e branca, é uma proeminente personagem no universo Star Wars. Inicialmente introduzida como aprendiz de Anakin Skywalker, ela se destaca por sua perícia no combate com sabres de luz e por desempenhar um papel crucial na série \\\"Star Wars: The Clone Wars\\\". Sua jornada é marcada por desafios, levando-a a questionar e eventualmente se distanciar da Ordem Jedi, evidenciando uma narrativa rica em desenvolvimento pessoal e coragem.",
+    "id": "20"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/twc9hAD8Hj4?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/twc9hAD8Hj4/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "21"
+  },
+  {
+    "titulo": "Han Solo",
+    "video": "https://www.youtube.com/embed/4irAU97zPB0?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/4irAU97zPB0/hqdefault.jpg",
+    "categoria": "Especial",
+    "descricao": " É um destemido contrabandista espacial da galáxia Star Wars, conhecido por sua habilidade excepcional como piloto da icônica nave Millennium Falcon. Com seu carisma irreverente e astúcia, Solo rapidamente se tornou um herói relutante na luta contra o Império Galáctico. Interpretado por Harrison Ford, Han Solo deixou uma marca duradoura na cultura pop como um dos personagens mais amados da saga.",
+    "id": "22"
+  },
+  {
+    "titulo": "Anakin Skywalker",
+    "video": "https://www.youtube.com/embed/BzP8PLCszJg?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/BzP8PLCszJg/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "23"
+  },
+  {
+    "titulo": "Baylan Skoll",
+    "video": "https://www.youtube.com/embed/xiNSzOtn368?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/xiNSzOtn368/hqdefault.jpg",
+    "categoria": "Caçador de recompensas",
+    "descricao": "Skoll é um ex-Jedi que caiu para o lado sombrio da Força. Ele é um guerreiro habilidoso e um usuário poderoso da Força. Seu sabre de luz é de cor laranja, o que é incomum para os Jedi ou Sith.\n\nSkoll é um personagem complexo e misterioso. Ele é um sobrevivente da Ordem 66, e suas motivações são desconhecidas. Ele pode ser um vilão puro, ou pode ser um anti-herói que luta por uma causa que acredita ser justa.",
+    "id": "24"
+  },
+  {
+    "titulo": "Conde Dookan",
+    "video": "https://www.youtube.com/embed/0oaOKRYLlkE?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/0oaOKRYLlkE/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Dooku nasceu no planeta Serenno e foi treinado como Jedi pelo Mestre Yoda. Ele se tornou um Jedi Mestre e treinou vários aprendizes, incluindo Qui-Gon Jinn e Obi-Wan Kenobi.\n\nNo entanto, Dooku ficou desiludido com a Ordem Jedi e se voltou para o lado sombrio da Força. Ele se juntou ao Conde Dooku e se tornou um Lorde Sith.\n\nDooku foi um dos principais líderes da Confederação de Sistemas Independentes, uma aliança de planetas que se rebelou contra a República Galáctica. Ele foi um oponente formidável para os Jedi e ajudou a desencadear as Guerras Clônicas.",
+    "id": "25"
+  },
+  {
+    "titulo": "Conde Dookan",
+    "video": "https://www.youtube.com/embed/-W_gJZ6yGp0?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/-W_gJZ6yGp0/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Dooku nasceu no planeta Serenno e foi treinado como Jedi pelo Mestre Yoda. Ele se tornou um Jedi Mestre e treinou vários aprendizes, incluindo Qui-Gon Jinn e Obi-Wan Kenobi.\n\nNo entanto, Dooku ficou desiludido com a Ordem Jedi e se voltou para o lado sombrio da Força. Ele se juntou ao Conde Dooku e se tornou um Lorde Sith.\n\nDooku foi um dos principais líderes da Confederação de Sistemas Independentes, uma aliança de planetas que se rebelou contra a República Galáctica. Ele foi um oponente formidável para os Jedi e ajudou a desencadear as Guerras Clônicas.",
+    "id": "26"
+  },
+  {
+    "titulo": "Qui-Gon Jinn",
+    "video": "https://www.youtube.com/embed/5UJviqdKwHM?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/5UJviqdKwHM/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Impacto: Qui-Gon foi um personagem importante na história de Star Wars. Ele foi o mentor de Obi-Wan Kenobi, que se tornou um dos maiores Jedi da história. Ele também descobriu Anakin Skywalker, que se tornou o principal protagonista da saga.\n\nQui-Gon é um personagem complexo e interessante. Ele é um Jedi sábio e intuitivo, mas também é um rebelde que não segue cegamente as regras da Ordem Jedi. Ele é um personagem importante que desempenhou um papel fundamental na história de Star Wars.",
+    "id": "27"
+  },
+  {
+    "titulo": "Thrawn",
+    "video": "https://www.youtube.com/embed/oDTasvS4cRo?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/oDTasvS4cRo/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Thrawn é um personagem importante na história de Star Wars. Ele é um dos vilões mais populares da saga e sua história é uma das mais complexas e interessantes.\n\nThrawn é um personagem que tem sido objeto de muita discussão e debate. Alguns fãs o consideram um vilão fascinante e complexo, enquanto outros o consideram um personagem unidimensional e clichê.",
+    "id": "28"
+  },
+  {
+    "titulo": "Ordem 66",
+    "video": "https://www.youtube.com/embed/SjWUJoiZ48o?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/SjWUJoiZ48o/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "A Ordem 66 foi um protocolo secreto da República Galáctica, que ordenava aos soldados clones do Grande Exército da República que matassem todos os Jedi. A ordem foi ativada pelo Chanceler Supremo Palpatine, que era secretamente o Lorde Sith Darth Sidious.\n\nA Ordem 66 foi executada no final das Guerras Clônicas, quando os clones se voltaram contra seus generais Jedi. Milhares de Jedi foram mortos, incluindo mestres, padawans e crianças. A ordem foi um evento crucial na história de Star Wars, pois marcou o fim da Ordem Jedi e o início do reinado do Império Galáctico.",
+    "id": "29"
+  },
+  {
+    "titulo": "Shin Hati",
+    "video": "https://www.youtube.com/embed/uhyZG9PbmyU?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/uhyZG9PbmyU/hqdefault.jpg",
+    "categoria": "Caçador de recompensas",
+    "descricao": "Shin Hati é uma personagem complexa e intrigante. Ela é uma seguidora da luz, mas também é leal ao seu mestre, que é um ex-Jedi que se desviou do caminho da luz. Shin Hati ainda está em desenvolvimento, e será interessante ver como sua história se desenrola no futuro.",
+    "id": "30"
+  },
+  {
+    "titulo": "Shin Hati",
+    "video": "https://www.youtube.com/embed/ls3In8g_Dzo?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/ls3In8g_Dzo/hqdefault.jpg",
+    "categoria": "Caçador de recompensas",
+    "descricao": "Shin Hati é uma personagem complexa e intrigante. Ela é uma seguidora da luz, mas também é leal ao seu mestre, que é um ex-Jedi que se desviou do caminho da luz. Shin Hati ainda está em desenvolvimento, e será interessante ver como sua história se desenrola no futuro.",
+    "id": "31"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/PV4woeUYDjI?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/PV4woeUYDjI/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "32"
+  },
+  {
+    "titulo": "CAL KESTIS",
+    "video": "https://www.youtube.com/embed/MBkUGDlRbL8?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/MBkUGDlRbL8/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Cal Kestis é um humano sensível à Força que serviu como Padawan na Ordem Jedi durante as Guerras Clônicas. Ele sobreviveu aos estágios iniciais da Ordem 66, que ordenava a execução de todos os Jedi, e passou a viver uma vida clandestina como um lixeiro em Bracca.\nAnos depois, Cal é descoberto por um Inquisidor, uma agente do Império Galáctico que caça Jedi sobreviventes. Cal é forçado a fugir e começa uma jornada para recuperar sua identidade como Jedi.",
+    "id": "33"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/6g0m-JeZJrs?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/6g0m-JeZJrs/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O venerado Mestre Jedi de Star Wars, é um guerreiro sábio e nobre, conhecido por sua habilidade excepcional com um sabre de luz e por ser um defensor incansável da justiça. Sua jornada heróica é marcada pela sabedoria, lealdade e uma inabalável devoção à Força.",
+    "id": "34"
+  },
+  {
+    "titulo": "Yoda",
+    "video": "https://www.youtube.com/embed/fzLt3ad2FlU?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/fzLt3ad2FlU/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Yoda foi um dos Jedi mais poderosos de sua época. Ele era um mestre da Força, e era capaz de realizar feitos incríveis, como levitar objetos pesados e prever o futuro. Ele também era um hábil combatente com sabre de luz, e foi um dos poucos Jedi que conseguiu derrotar Darth Vader em combate. Yoda desempenhou um papel importante na história da Ordem Jedi. Ele treinou muitos Jedi, incluindo Luke Skywalker, e ajudou a liderar a Ordem durante as Guerras Clônicas. Ele também foi um dos poucos Jedi que sobreviveram à Ordem 66, e ajudou Luke Skywalker a derrotar Darth Vader e o Imperador Palpatine.",
+    "id": "35"
+  },
+  {
+    "titulo": "Kylo Ren",
+    "video": "https://www.youtube.com/embed/W06jWM9Rzww?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/W06jWM9Rzww/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "Nascido como Ben Solo, é um personagem cativante da saga \"Star Wars\". Como o filho de Leia Organa e Han Solo, ele é consumido pelo conflito interno entre a luz e a escuridão. Tornando-se um líder poderoso da Primeira Ordem, Kylo Ren é fascinado pela figura de Darth Vader, incorporando sua busca pela supremacia. Sua jornada tumultuada e sua complexidade emocional adicionam camadas intrigantes à narrativa, fazendo de Kylo Ren um elemento central e memorável na trama.",
+    "id": "36"
+  },
+  {
+    "titulo": "Anakin Skywalker",
+    "video": "https://www.youtube.com/embed/pb_oY27Ma0E?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/pb_oY27Ma0E/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "37"
+  },
+  {
+    "titulo": "Din Djarin",
+    "video": "https://www.youtube.com/embed/Ak6IGUU40tU?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/Ak6IGUU40tU/hqdefault.jpg",
+    "categoria": "Mandaloriano",
+    "descricao": "Um caçador de recompensas austero e habilidoso. Vestindo a distintiva armadura mandaloriana, Djarin segue um código de honra rigoroso. Sua jornada solitária revela as complexidades de sua lealdade à cultura mandaloriana, enquanto sua ligação afetiva com Grogu adiciona profundidade emocional à narrativa. Com seu caráter resiliente e atraente, Din Djarin se destaca como uma figura central e fascinante no universo de \"Star Wars\".",
+    "id": "38"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/LimUUMeHoNI?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/LimUUMeHoNI/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "A trágica história de Obi Wan Kenobi",
+    "id": "39"
+  },
+  {
+    "titulo": "Anakin Skywalker",
+    "video": "https://www.youtube.com/embed/mKxRl9sa9w4?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/mKxRl9sa9w4/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "Antes conhecido como o talentoso e carismático cavaleiro Jedi, eventualmente tornou-se Darth Vader, o Lorde Sith implacável. Sua história é uma tragédia épica, destacando seu potencial extraordinário, mas também revelando as consequências sombrias da sedução pelo lado negro da Força.",
+    "id": "40"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/kDm22fqg0VA?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/kDm22fqg0VA/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O venerado Mestre Jedi de Star Wars, é um guerreiro sábio e nobre, conhecido por sua habilidade excepcional com um sabre de luz e por ser um defensor incansável da justiça. Sua jornada heróica é marcada pela sabedoria, lealdade e uma inabalável devoção à Força.",
+    "id": "41"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/QfXsc1hhTk0?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/QfXsc1hhTk0/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "42"
+  },
+  {
+    "titulo": "Skywalker Family",
+    "video": "https://www.youtube.com/embed/bnPgDXpN574?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/bnPgDXpN574/hqdefault.jpg",
+    "categoria": "Especial",
+    "descricao": "Historia da familia Skywalker",
+    "id": "43"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/I-wZdPFrHQU?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/I-wZdPFrHQU/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "44"
+  },
+  {
+    "titulo": "Obi Wan Kenobi",
+    "video": "https://www.youtube.com/embed/ITlQCEi9ATs?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/ITlQCEi9ATs/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O venerado Mestre Jedi de Star Wars, é um guerreiro sábio e nobre, conhecido por sua habilidade excepcional com um sabre de luz e por ser um defensor incansável da justiça. Sua jornada heróica é marcada pela sabedoria, lealdade e uma inabalável devoção à Força.",
+    "id": "45"
+  },
+  {
+    "titulo": "Luke Skywalker",
+    "video": "https://www.youtube.com/embed/zEfC5Xu-OuA?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/zEfC5Xu-OuA/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O herói destinado a grandes feitos na galáxia, é uma presença lendária. De um simples fazendeiro em Tatooine a um mestre Jedi, sua jornada é um épico de superação e autodescoberta. Luke personifica a esperança, coragem e a crença na redenção, destacando-se como um farol de resistência na luta contra as trevas do Império e da influência do lado sombrio da Força.",
+    "id": "46"
+  },
+  {
+    "titulo": "Luke Skywalker",
+    "video": "https://www.youtube.com/embed/XbnKCzyvx9g?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/XbnKCzyvx9g/hqdefault.jpg",
+    "categoria": "Jedi",
+    "descricao": "O herói destinado a grandes feitos na galáxia, é uma presença lendária. De um simples fazendeiro em Tatooine a um mestre Jedi, sua jornada é um épico de superação e autodescoberta. Luke personifica a esperança, coragem e a crença na redenção, destacando-se como um farol de resistência na luta contra as trevas do Império e da influência do lado sombrio da Força.",
+    "id": "47"
+  },
+  {
+    "titulo": "Darth Vader",
+    "video": "https://www.youtube.com/embed/yyHCgiamMtM?si=m9cQpJWmBkCxIj8D",
+    "imagem": "https://img.youtube.com/vi/yyHCgiamMtM/hqdefault.jpg",
+    "categoria": "Sith",
+    "descricao": "O icônico vilão de Star Wars, é um temido Lorde Sith com uma presença imponente e uma respiração mecânica sinistra, cuja trajetória épica retrata a luta entre a luz e a escuridão em uma galáxia distante. Seu capacete negro e respirador mecânico tornaram-se símbolos emblemáticos do mal no universo cinematográfico.",
+    "id": "48"
+  }
+]
