@@ -43,20 +43,24 @@ export default function PaginaInicial() {
       setQuantidadeSlides(5.2);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(7);
+      setQuantidadeSlides(8);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);
 
   const imagemCapa =
-    'https://images4.alphacoders.com/122/thumbbig-1221834.webp';
+    'estrela.png';
+
+  const imagemStarWars = 'starwars.png';
 
   return (
     <section className={styles.sectionVideos}>
+      <div className={styles.banner_container}>
       <div className={styles.banner}>
         <img src={imagemCapa} className={styles.capa} />
+      <img src={imagemStarWars} className={styles.logoStarWars} />
       </div>
-
+      </div>
       {categorias.map((categoria, index) => (
         <section>
           <div className={styles.categoria__info}>
@@ -77,7 +81,7 @@ export default function PaginaInicial() {
 
           <Swiper
             slidesPerView={Number(quantidadeSlides)}
-            spaceBetween={8}
+            spaceBetween={0}
             centeredSlides={slideCentralizado}
             className={styles.slider}
           >
