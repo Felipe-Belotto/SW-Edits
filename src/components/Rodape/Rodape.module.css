@@ -9,13 +9,13 @@
 
 .texto {
   font-size: 18px;
-  color: white;
+  color: rgba(255, 255, 255, 0.431);
   line-height: 1.5;
 }
 
 .link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.474);
   background-color: #0e0e0e;
   border-radius: 5px;
   padding: 2px;
@@ -24,4 +24,11 @@
 
 .link:hover {
   background-color: rgba(70, 70, 70, 0.451);
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .texto {
+    font-size: 12px;
+  }
 }
