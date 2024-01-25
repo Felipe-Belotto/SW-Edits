@@ -145,7 +145,7 @@ export default function Player() {
       {videosRelacionados.length > 0 && (
         <section className={styles.relacionados__container}>
           <h1 className={styles.relacionados__titulo}>
-            Relacionados a {video.titulo}
+            Sugestões
           </h1>
           <Swiper
             slidesPerView={Number(quantidadeSlides)}

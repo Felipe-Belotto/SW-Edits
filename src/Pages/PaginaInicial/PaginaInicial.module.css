@@ -1,34 +1,38 @@
 .sectionVideos {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  background-color: rgba(13, 13, 60, 0.113);
+  background: linear-gradient(to right, #24242444, #02010e90);
 }
 
 .banner_container{
   display: flex;
+  padding: 0 0 16px 0;
 }
 
 .banner {
   width: 100%;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 32px 0;
-  background-color: rgba(0, 0, 0, 0.27);
 }
 
 .capa {
+  display: flex;
   width: 5%;
   padding: 0 32px 0 0;
   align-self: end;
+  user-select: none;
+  pointer-events: none;
   opacity: 50%;
 }
 
 .logoStarWars{
-    position: relative;
     width: 15%;
-    padding: 32px 0;
+    user-select: none;
+    pointer-events: none;
 }
 
 .categoriaContainer {

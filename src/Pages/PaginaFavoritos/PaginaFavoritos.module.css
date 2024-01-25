@@ -3,7 +3,6 @@
   text-align: center;
   padding: 48px;
   background-color: rgba(5, 4, 4, 0.735);
-  font-style: italic;
 }
 
 .categoriaContainer {
@@ -23,7 +22,7 @@
 
 .categoria__nome {
   color: #f8f8f8;
-  font-size: 32px;
+  font-size: 24px;
   padding: 20px 40px;
 }
 

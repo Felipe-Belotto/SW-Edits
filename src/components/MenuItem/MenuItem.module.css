@@ -7,10 +7,12 @@
   gap: 8px; 
   padding: 10px 0;
   cursor: pointer;
+  opacity: 50%;
 }
 
 .item:hover {
   cursor: pointer;
+  opacity: 100%;
 }
 
 .label{ 

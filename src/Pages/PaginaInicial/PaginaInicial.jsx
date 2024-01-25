@@ -67,11 +67,10 @@ export default function PaginaInicial() {
             <h1 className={styles.categoria__nome}>
               <span
                 style={{
-                  border: `1px solid ${categoria.corDeFundo} `,
                   padding: '8px',
-                  borderRadius: '8px',
+                  borderRadius: '4px',
                   boxShadow: `0 0 10px ${categoria.corDeFundo}, 0 0 20px ${categoria.corDeFundo}`,
-                  color: categoria.corDeFundo,
+                  color: "white",
                 }}
               >
                 {categoria.nome}

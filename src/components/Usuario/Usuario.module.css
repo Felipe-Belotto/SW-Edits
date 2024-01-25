@@ -1,5 +1,6 @@
 .container {
   width: auto;
+  z-index: 1;
 }
 
 .section__usario{
