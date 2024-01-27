@@ -5,11 +5,3 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.685);
 }
-
-@media screen and (max-width: 900px ) {
-  
-  .main {
-    margin-top: 60px;
-  }
-
-}
