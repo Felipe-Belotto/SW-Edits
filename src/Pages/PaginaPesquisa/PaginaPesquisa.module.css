@@ -10,6 +10,23 @@
   display: flex;
   padding: 100px 0 20px 0;}
 
+  .informativo {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .informativo span{
+    color: rgb(188, 188, 188);
+  }
+
+  .informativo strong {
+    color: rgb(226, 226, 226);
+    font-weight: bold;
+  }
+
 .container__cards{
   width: 80%;
   display: flex;
@@ -23,6 +40,10 @@
     width: 90%;
     display: flex;
     padding: 20px 0 10px 0;
+  }
+
+  .informativo {
+    font-size: 16px;
   }
 
   .container__cards{

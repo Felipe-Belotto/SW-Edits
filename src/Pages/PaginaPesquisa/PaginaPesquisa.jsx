@@ -58,6 +58,10 @@ export default function PaginaPesquisa() {
 
       </div>
 
+      {textoPesquisado? (<div className={styles.informativo}>
+        <span>Resultado de <strong>{textoPesquisado}</strong></span>
+      </div>): ""}
+
       <div className={styles.container__cards}>
     {videosRelacionados.length > 0 && (
     videosRelacionados.map((videoAtual) => <Card key={videoAtual.id} {...videoAtual} />)
