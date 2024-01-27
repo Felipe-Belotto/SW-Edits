@@ -16,7 +16,7 @@ export const InputPesquisa = (props) => {
       disablePortal
       id="combo-box-demo"
       options={opcoesComVazio} 
-      sx={{ width: 300, background: "#f4f4f4" }}
+      sx={{ width: 350, background: "#f4f4f4", borderRadius:"4px" }}
       ListboxProps={{ style: { background: "rgb(49, 49, 49)" } }}
       renderInput={(params) => (
         <TextField label="Pesquisa" {...params} variant='filled'/>
