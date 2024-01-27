@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 0 20%;
+  padding: 2% 20%;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
@@ -10,7 +10,7 @@
   color: var(----color-gray-light, #F5F5F5);
   text-align: center;
   font-family: Roboto;
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -91,7 +91,7 @@
   }
 
   .titulo {
-    font-size: 48px;
+    font-size: 28px;
   }
 
   .preview__container {

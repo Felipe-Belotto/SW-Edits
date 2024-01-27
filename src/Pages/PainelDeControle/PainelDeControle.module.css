@@ -50,6 +50,10 @@
   display: flex;
 }
 
+.nav__section{
+  display: flex;
+}
+
 @media screen and (max-width: 1444px) {
 
   .section__categorias {
@@ -88,6 +92,12 @@
     width: auto;
     padding: 8px 0;
     border: 1px solid rgb(23, 23, 23);
+  }
+
+  .nav__section{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
   }
 
 }

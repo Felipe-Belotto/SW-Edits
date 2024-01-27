@@ -24,24 +24,6 @@ export default function MenuLateral(props) {
               to="/favoritos"
               img={<i className="fa-solid fa-heart"></i>}
             />
-            <MenuItem
-              label="Pesquisa"
-              to="/pesquisa"
-              img={<i class="fa-solid fa-magnifying-glass"></i>}
-            />
-          </section>
-
-          <section className={styles.nav__section}>
-            <MenuItem
-              label="Add categoria"
-              to="/novacategoria"
-              img={<i className="fa-solid fa-list"></i>}
-            />
-            <MenuItem
-              label="Add video"
-              to="/novovideo"
-              img={<i className="fa-solid fa-video"></i>}
-            />
           </section>
 
           <section className={styles.nav__section}>

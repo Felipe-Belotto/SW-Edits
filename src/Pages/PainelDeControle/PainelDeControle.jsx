@@ -7,6 +7,8 @@ import CardADM from '../../components/CardADM/CardADM';
 import apiVideos from '../../function/apiVideos';
 import apiCategorias from '../../function/apiCategorias'; // Importe a função apiCategorias
 import CategoriaBotoes from '../../components/CategoriaBotoes/CategoriaBotoes';
+import MenuItem from '../../components/MenuItem/MenuItem';
+import LinkButton from '../../components/LinkButton/LinkButton';
 
 export default function PainelDeControle() {
   const [videos, setVideos] = useState([]);
@@ -40,12 +42,26 @@ export default function PainelDeControle() {
 
   return (
     <>
+    
+    <section className={styles.nav__section}>
+            <LinkButton
+              label="Nova categoria"
+              to="/novacategoria"
+              img={<i className="fa-solid fa-list"></i>}
+            />
+            <LinkButton
+              label="Novo video"
+              to="/novovideo"
+              img={<i className="fa-solid fa-video"></i>}
+            />
+          </section>
+
       <section className={styles.section__categorias}>
         <h1 className={styles.section__titulo}>Categorias</h1>
         {categorias.map((categoria, index) => (
           <section
             key={index}
-            style={{ backgroundColor: categoria.corDeFundo }}
+            style={{ backgroundColor: ajustarOpacidade(categoria.corDeFundo, 0.5, 0.5)  }}
           >
             <div className={styles.categorias__layout}>
               <h1 className={styles.categoria__nome}>{categoria.nome}</h1>
@@ -59,7 +75,7 @@ export default function PainelDeControle() {
         <h1 className={styles.section__titulo}>Vídeos</h1>
         {categorias.map((categoria) => (
           <section
-            style={{ backgroundColor: categoria.corDeFundo }}
+            style={{ backgroundColor: ajustarOpacidade(categoria.corDeFundo, 0.5, 0.5) }}
             key={categoria.id}
           >
             <div className={styles.categoria__info}>

@@ -1,0 +1,32 @@
+.item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: rgba(88, 88, 88, 0.655);
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: rgba(60, 60, 60, 0.764);
+}
+
+.label{ 
+  display: flex;
+  padding: 0 0 0 4px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .item{
+    margin: 8px 0;
+  } 
+}

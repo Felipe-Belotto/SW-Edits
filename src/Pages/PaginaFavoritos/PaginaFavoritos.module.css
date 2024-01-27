@@ -5,6 +5,12 @@
   background-color: rgba(5, 4, 4, 0.735);
 }
 
+.sectionVideos{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .categoriaContainer {
   display: flex;
   flex-direction: column;

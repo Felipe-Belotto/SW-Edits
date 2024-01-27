@@ -53,6 +53,11 @@
   display: none;
 }
 
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
 .botao__pesquisa{
   display: flex;
   justify-content: center;

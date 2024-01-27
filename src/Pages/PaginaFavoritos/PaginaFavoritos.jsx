@@ -57,7 +57,7 @@ function PaginaFavoritos() {
           <section>
             <div key={categoria.nome} className={styles.categoria__info}>
               <h1 className={styles.categoria__nome}>
-                {' '}
+
                 <span
                   style={{
                     border: `1px solid ${categoria.corDeFundo} `,
