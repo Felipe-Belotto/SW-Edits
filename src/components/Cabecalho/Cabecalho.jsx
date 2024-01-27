@@ -26,6 +26,12 @@ export default function Cabecalho() {
           <img src={Logo} alt="Imagem do logo" className={styles.logo} />
         </Link>
 
+        <div className={styles.botao__pesquisa}>
+        <Link to="./pesquisa">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </Link>
+        </div>
+
         <nav className={styles.nav}>
           <section className={styles.nav__itens}>
             <MenuItem
