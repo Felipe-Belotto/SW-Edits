@@ -1,4 +1,5 @@
 .sectionVideos {
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, #24242444, #02010e90);
@@ -68,6 +69,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .sectionVideos{
+    padding: 0;
+  }
 
   .banner {
     width: 100%;

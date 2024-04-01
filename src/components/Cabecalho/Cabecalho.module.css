@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 0 16px;
+  padding: 0 10%;
   gap: 32px;
   background-color: #0e0e0e;
 }
@@ -33,7 +33,7 @@
 
 .nav__itens {
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
 
 @media screen and (max-width: 900px) {

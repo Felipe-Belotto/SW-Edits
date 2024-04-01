@@ -34,16 +34,16 @@ export default function PaginaInicial() {
       setQuantidadeSlides(2);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1200) {
-      setQuantidadeSlides(2.6);
+      setQuantidadeSlides(2);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1550) {
-      setQuantidadeSlides(3.8);
+      setQuantidadeSlides(3);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1920) {
-      setQuantidadeSlides(5.2);
+      setQuantidadeSlides(4);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(8);
+      setQuantidadeSlides(6);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);

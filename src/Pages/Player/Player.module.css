@@ -66,11 +66,10 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 40px 0;
+  padding: 40px 10%;
 }
 
 .relacionados__titulo {
-  padding: 0 0 0 10%;
   color: #f8f8f8;
   font-size: 28px;
 

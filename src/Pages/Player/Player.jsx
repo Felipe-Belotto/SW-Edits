@@ -81,10 +81,10 @@ export default function Player() {
       setQuantidadeSlides(3.8);
       setSlideCentralizado(false);
     } else if (larguraTela <= 1920) {
-      setQuantidadeSlides(5.2);
+      setQuantidadeSlides(4);
       setSlideCentralizado(false);
     } else {
-      setQuantidadeSlides(7);
+      setQuantidadeSlides(6);
       setSlideCentralizado(false);
     }
   }, [larguraTela]);

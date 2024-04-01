@@ -16,6 +16,8 @@ export default function Cabecalho() {
 
   const [menuAtivo, setMenuAtivo] = useContext(MenuContext);
 
+  const larguraTela = window.innerWidth;
+
   return (
     <>
       <header className={styles.container}>
@@ -26,7 +28,7 @@ export default function Cabecalho() {
           <img src={Logo} alt="Imagem do logo" className={styles.logo} />
         </Link>
 
-        <div className={styles.botao__pesquisa}>
+        <div className={styles.botao__pesquisa} style={{ display: larguraTela >  1200 ? 'none' : 'flex' }}>
         <Link to="./pesquisa">
         <i class="fa-solid fa-magnifying-glass"></i>
         </Link>
